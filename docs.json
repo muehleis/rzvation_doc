@@ -29,63 +29,63 @@
             "group": "Erste Schritte",
             "expanded": true,
             "pages": [
-              "untitled-page",
-              "untitled-page-2",
-              "untitled-page-3"
+              "einfuehrung",
+              "konto-erstellen",
+              "schnellstart"
             ]
           },
           {
             "group": "Grundkonzepte",
             "pages": [
-              "untitled-page-4",
-              "untitled-page-5",
-              "untitled-page-6",
-              "untitled-page-7",
-              "untitled-page-8"
+              "organisation",
+              "buchungsseiten",
+              "ressourcen",
+              "veranstaltungen",
+              "reservierungen"
             ]
           },
           {
             "group": "Organisation",
             "pages": [
-              "untitled-page-9",
-              "untitled-page-10",
-              "untitled-page-11",
-              "untitled-page-12",
-              "untitled-page-13"
+              "basisdaten",
+              "kontakt",
+              "buchungsseiten-erstellen-bearbeiten",
+              "einstellungen",
+              "zahlungen"
             ]
           },
           {
             "group": "Benutzerverwaltung",
             "pages": [
-              "untitled-page-14",
-              "untitled-page-15"
+              "rollen-berechtigungen",
+              "benutzer"
             ]
           },
           {
             "group": "Ressourcen (Objekte)",
             "pages": [
-              "untitled-page-16",
-              "untitled-page-17",
-              "untitled-page-18"
+              "verfuegbarkeit",
+              "kategorien",
+              "objekt-anlegen-bearbeiten"
             ]
           },
           {
             "group": "Veranstaltungen",
             "pages": [
-              "untitled-page-19"
+              "veranstaltung-anlegen"
             ]
           },
           {
             "group": "Mitglieder / Personen",
             "pages": [
-              "untitled-page-20",
-              "untitled-page-21"
+              "importieren",
+              "mitglieder"
             ]
           },
           {
             "group": "Reservierungen",
             "pages": [
-              "untitled-page-22"
+              "reservierungen-verwalten"
             ]
           }
         ]
