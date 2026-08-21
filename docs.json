@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "rzvation. Documentation",
+  "name": "rzvation",
   "colors": {
     "primary": "#9c59e6",
     "light": "#c084fc",
     "dark": "#7c3aed"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/logo_32x32.png",
+    "dark": "/images/logo_32x32.png"
+  },
   "navigation": {
     "pages": [
       {
@@ -18,20 +21,6 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    },
     "languages": [
       {
         "language": "de",
