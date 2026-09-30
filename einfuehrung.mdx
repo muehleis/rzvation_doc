@@ -1,80 +1,103 @@
 ---
 title: "Einführung"
 sidebarTitle: "Einführung"
-description: "Was ist Rzvation, für wen ist es gedacht ist und wie funktioniert es?"
+description: "Was ist Rzvation, für wen ist es gedacht und wie funktioniert es?"
+keywords: ["Überblick", "Was ist Rzvation", "Reservierungssoftware", "Buchungssystem", "Online-Buchung"]
 ---
 
 ## Was ist Rzvation?
 
-Rzvation ist eine Software zur Verwaltung von Reservierungen und Buchungen. Organisationen verwalten damit ihre buchbaren Ressourcen zentral, steuern Verfügbarkeiten und nehmen Buchungen entgegen – intern oder über eine öffentliche Buchungsseite. Genehmigungsworkflows und Online-Zahlung sind optional zuschaltbar.
+Rzvation ist eine Software für Reservierungen und Buchungen. Sie verwalten damit alles, was man bei Ihnen buchen kann, an einem Ort: Räume, Plätze, Geräte, Fahrzeuge oder Eintrittskarten für eine Veranstaltung.
 
-Statt Tabellenkalkulationen, Telefonlisten und manueller Abstimmung gibt es einen zentralen Ort für Ressourcen, Verfügbarkeiten, Buchungen und die Personen dahinter.
+Ihre Kundinnen und Kunden buchen selbst über eine eigene Internetseite, die **Buchungsseite**. Sie sehen alle Buchungen in Ihrer Verwaltung, können sie prüfen, ändern oder stornieren. Wenn Sie möchten, prüfen Sie jede Buchung vorher (Freigabe) oder lassen online bezahlen.
+
+Statt Tabellen, Telefonlisten und Absprachen per E-Mail gibt es einen zentralen Ort für Ihre Angebote, die Zeiten, die Buchungen und die Personen dahinter.
 
 ## Für wen ist Rzvation gedacht?
 
-Rzvation eignet sich für Alle, die wiederkehrende oder zeitgebundene Buchungen verwalten, zum Beispiel:
+Rzvation eignet sich für alle, die regelmäßig oder zu bestimmten Zeiten etwas vergeben. Zum Beispiel:
 
-- Sportvereine, die Tennis- oder Fußballplätze an ihre Mitglieder vermieten möchten.
-- Gemeinden, die Grillplätze vermieten wollen.
-- Feuerwehren, die intern ihre Fahrzeuge buchbar machen.
-- Eine Kirche möchte die Übungszeiten für ihre Orgel verwalten.
-- Schulen können z.B. Sprechzeiten für Elternsprechtage organisieren
-- Ein Verein veranstaltet ein Jubiläumsfest und möchte dafür Eintrittskarten verkaufen
+- Sportvereine, die Tennis- oder Fußballplätze an ihre Mitglieder vermieten.
+- Gemeinden, die Grillplätze oder Gemeinderäume vermieten.
+- Feuerwehren, die ihre Fahrzeuge intern buchbar machen.
+- Kirchengemeinden, die Übungszeiten an der Orgel vergeben.
+- Schulen, die Sprechzeiten für den Elternsprechtag organisieren.
+- Vereine, die für ein Jubiläumsfest Eintrittskarten verkaufen.
 
-## Die Kernkonzepte im Überblick
+## Die wichtigsten Begriffe
 
-Rzvation ist um wenige, klar abgegrenzte Begriffe herum aufgebaut. Wer diese versteht, findet sich im gesamten Produkt zurecht.
+Rzvation ist um wenige, klar getrennte Begriffe aufgebaut. Wenn Sie diese kennen, finden Sie sich überall zurecht.
 
 <CardGroup cols={2}>
-  <Card title="Organisation" icon="building">
-    Sie können Ihre Kontakt- und Organisationsdaten zentral verwalten.<br />Sie können Benutzer anlegen und ihnen spezifische Rechte zuweisen.
+  <Card title="Organisation" icon="building" href="/organisation">
+    Ihr Verein, Ihre Firma oder Ihre Einrichtung. Hier pflegen Sie Adresse, Kontakt, Zahlungen und Benutzer.
   </Card>
 
-  <Card title="Buchungsseite" icon="browser">
-    Die Webseite, auf der ihre Nutzer oder Mitglieder Buchungen vornehmen.<br />Sie können die Buchung auf Ihre Mitglieder/Kunden beschränken.
+  <Card title="Buchungsseite" icon="browser" href="/buchungsseiten">
+    Die Internetseite, auf der Ihre Kundinnen und Kunden buchen. Auf Wunsch nur für Mitglieder.
   </Card>
 
-  <Card title="Kategorie & Ressource" icon="layer-group">
-    Ressourcen sind die eigentlich buchbaren Objekte.<br />Kategorien gruppieren sie und legen gemeinsame Regeln fest.
+  <Card title="Kategorie & Objekt" icon="layer-group" href="/ressourcen">
+    Objekte (auch: Ressourcen) sind die Dinge, die man buchen kann. Kategorien fassen sie zusammen und legen gemeinsame Regeln fest.
   </Card>
 
-  <Card title="Verfügbarkeit" icon="calendar-check">
-    Legt fest, wann eine Ressource buchbar ist.<br />Definieren Sie regelmäßige Öffnungszeiten und Ausnahmen.
+  <Card title="Verfügbarkeit" icon="calendar-check" href="/verfuegbarkeit">
+    Legt fest, wann ein Objekt buchbar ist: regelmäßige Öffnungszeiten und Ausnahmen wie Feiertage.
   </Card>
 
-  <Card title="Veranstaltungen" icon="ticket">
-    Wenn Sie Eintrittskarten für eine Veranstaltung vertreiben möchten, können Sie eine Veranstaltung anlegen.
+  <Card title="Veranstaltung (Event)" icon="ticket" href="/veranstaltungen">
+    Ein Termin, für den Sie Eintrittskarten verkaufen oder vergeben – mit Kartenarten und Kontingenten.
   </Card>
 
-  <Card title="Person" icon="user">
-    Mitglieder oder Gäste einer Organisation. Sie können Reservierungen auf diese Personen beschränken.
+  <Card title="Person / Mitglied" icon="user" href="/mitglieder">
+    Mitglieder, Gäste oder Kunden Ihrer Organisation. Buchungen können Sie auf diese Personen beschränken.
   </Card>
 </CardGroup>
 
+<Tip>
+  In der Verwaltung heißen die buchbaren Dinge **Objekte**, in manchen Texten auch **Ressourcen**. Beide Wörter meinen dasselbe.
+</Tip>
+
 ## Wie eine Buchung entsteht
 
-1. Ein Besucher öffnet die öffentliche Buchungsseite und wählt einen freien Zeitslot.
-2. Je nach Konfiguration gibt er persönliche Daten ein.
-3. Die Buchung wird angelegt, direkt bestätigt oder erst nach Genehmigung.
-4. Optional ist die Onlinezahlung über Stripe möglich.
-5. Der Kunde erhält eine E-Mail-Bestätigung, optional mit Ticket.
+<Steps>
+  <Step title="Buchungsseite öffnen">
+    Eine Besucherin öffnet Ihre Buchungsseite und wählt einen freien Termin oder eine Eintrittskarte.
+  </Step>
+  <Step title="Angaben machen">
+    Sie gibt ihre Kontaktdaten ein. Welche Angaben Pflicht sind, legen Sie fest.
+  </Step>
+  <Step title="Buchung wird angelegt">
+    Die Buchung ist sofort bestätigt – oder wartet auf Ihre Freigabe, wenn Sie das so eingestellt haben.
+  </Step>
+  <Step title="Bezahlen (optional)">
+    Je nach Einstellung zahlt sie vor Ort, per Rechnung oder direkt online.
+  </Step>
+  <Step title="Bestätigung per E-Mail">
+    Sie erhält eine Bestätigung per E-Mail, auf Wunsch mit Eintrittskarte oder Ticket.
+  </Step>
+</Steps>
 
 ## Nächste Schritte
 
 <CardGroup cols={2}>
-  <Card title="1. Konto erstellen" icon="user-plus" href="/getting-started/konto-erstellen">
-    Organisation anlegen und erste Einstellungen vornehmen.
+  <Card title="1. Konto erstellen" icon="user-plus" href="/konto-erstellen">
+    Registrieren und die Daten Ihrer Organisation eintragen.
   </Card>
 
-  <Card title="2. Erste Buchungsseite" icon="rocket" href="/getting-started/erste-buchungsseite">
-    Buchungsseite konfigurieren und veröffentlichen.
+  <Card title="2. Schnellstart" icon="rocket" href="/schnellstart">
+    In wenigen Minuten zur ersten buchbaren Buchungsseite.
   </Card>
 
-  <Card title="3. Ressourcen & Verfügbarkeit" icon="calendar" href="/konzepte/verfuegbarkeit">
-    Kategorien, Ressourcen und Öffnungszeiten einrichten oder eine Veranstaltung.
+  <Card title="3. Objekte & Zeiten" icon="calendar" href="/verfuegbarkeit">
+    Öffnungszeiten, Kategorien und Objekte einrichten – oder eine Veranstaltung anlegen.
   </Card>
 
-  <Card title="4. Zahlungen" icon="credit-card" href="/zahlungen/stripe-verbinden">
-    Wenn Sie Onlinezahlungen akzeptieren wollen, verbinden Sie Stripe und Zahlungsarten festlegen.
+  <Card title="4. Zahlungen" icon="credit-card" href="/zahlungen">
+    Wenn Sie Onlinezahlungen annehmen möchten: Stripe verbinden und Zahlungsarten festlegen.
   </Card>
 </CardGroup>
+
+<Note>
+  Sie suchen eine bestimmte Einstellung? Im [Stichwortverzeichnis](/stichwortverzeichnis) finden Sie alle Begriffe von A bis Z mit dem Weg dorthin. Oder nutzen Sie die Suche oben auf der Seite.
+</Note>

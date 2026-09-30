@@ -1,4 +1,87 @@
 ---
-title: "Importieren"
+title: "Mitglieder importieren"
 sidebarTitle: "Importieren"
+description: "Viele Mitglieder auf einmal aus einer CSV-Datei (z. B. aus Excel) übernehmen."
+keywords: ["Import", "Importieren", "CSV", "Excel", "Tabelle", "Mitgliederliste hochladen", "Datei hochladen", "Spalten zuordnen", "Trennzeichen", "Semikolon", "Komma", "Umlaute", "Encoding", "UTF-8", "Vereinsverwaltung", "Übernehmen"]
 ---
+
+Sie haben Ihre Mitglieder schon in einer Tabelle, zum Beispiel in Excel oder in Ihrer Vereinssoftware? Dann müssen Sie nicht alle einzeln eintippen. Laden Sie die Liste als **CSV-Datei** hoch.
+
+<Info>
+  **Wo finden Sie das?** **Mitglieder → Importieren**
+  <br />Direkt öffnen: [www.rzvation.com/people#people-panel-import](https://www.rzvation.com/people#people-panel-import)
+</Info>
+
+## 1. CSV-Datei vorbereiten
+
+Eine CSV-Datei ist eine einfache Tabelle als Textdatei. So erstellen Sie sie in Excel: **Datei → Speichern unter → Dateityp „CSV (Trennzeichen-getrennt)“**.
+
+Achten Sie auf Folgendes:
+
+- Die **erste Zeile** enthält die Spaltenüberschriften, z. B. `Nachname;Vorname;Anrede;E-Mail`.
+- **Pflichtfelder** in jeder Zeile: **Nachname**, **Vorname** und **Anrede** (Geschlecht). Zeilen ohne diese Angaben werden übersprungen.
+- Trennzeichen: **Komma** oder **Semikolon**.
+- Maximale Dateigröße: **5 MB**.
+- Zeichensatz: **UTF-8**, **Windows-1252** oder **ISO-8859-1**. Umlaute werden damit richtig erkannt.
+
+**Beispiel:**
+
+```text
+Nachname;Vorname;Anrede;E-Mail;Mobilnummer;Interne ID
+Muster;Erika;Weiblich;erika@example.com;+491701234567;1001
+Beispiel;Max;Männlich;max@example.com;;1002
+```
+
+## 2. Datei hochladen
+
+Ziehen Sie die Datei in das Feld **Datei ablegen oder auswählen** – oder klicken Sie darauf und wählen Sie die Datei aus.
+
+## 3. Spalten zuordnen
+
+Rzvation zeigt eine Tabelle **Spalten zuordnen** mit:
+
+- **Ihre CSV-Spalte** – die Überschrift aus Ihrer Datei,
+- **Beispielwert** – der Wert aus der ersten Zeile,
+- **Importieren als** – das passende Feld in Rzvation.
+
+Rzvation ordnet bekannte Überschriften automatisch zu. Prüfen Sie jede Zeile. Spalten, die Sie nicht brauchen, stellen Sie auf **&lt;&lt; Nicht importieren &gt;&gt;**.
+
+Diese Felder stehen zur Auswahl:
+
+| Feld | Hinweis |
+|---|---|
+| **Nachname**, **Vorname**, **Anrede** | Pflicht |
+| **Interne ID** | Kunden- oder Mitgliedsnummer |
+| **Geburtsdatum** | |
+| **Straße**, **Adresszusatz**, **PLZ**, **Ort**, **Bundesland**, **Land** | |
+| **E-Mail**, **Telefonnummer**, **Mobilnummer** | Telefonnummern werden auf ein gültiges Format geprüft. |
+| **Mitgliedschaft freigeschaltet** | Ob die Person gleich buchen darf. Werte: `Ja`/`Nein` oder `1`/`0`. Ohne diese Spalte sind importierte Personen **nicht** freigeschaltet. |
+| **Buchungsseite** | Falls die Person nur einer bestimmten Buchungsseite zugeordnet sein soll. |
+| **Zugangscode**, **Strikes**, **Bemerkungen**, **Import-ID** | optional |
+
+## 4. Importieren
+
+Klicken Sie auf **Importieren**. Rzvation zeigt danach, wie viele Einträge angelegt, übersprungen oder fehlerhaft waren.
+
+<Note>
+  Der Import läuft ganz oder gar nicht: Tritt ein schwerer Fehler auf, wird nichts übernommen. Beheben Sie den Fehler in der Datei und starten Sie den Import neu.
+</Note>
+
+Mit **Zurücksetzen** brechen Sie ab und können eine andere Datei wählen.
+
+## Häufige Probleme
+
+<AccordionGroup>
+  <Accordion title="Umlaute sehen falsch aus (z. B. „MÃ¼ller“)">
+    Speichern Sie die Datei in Excel als **CSV UTF-8 (durch Trennzeichen getrennt)** und laden Sie sie erneut hoch.
+  </Accordion>
+  <Accordion title="Viele Zeilen werden übersprungen">
+    Prüfen Sie, ob in jeder Zeile **Nachname**, **Vorname** und **Anrede** gefüllt und richtig zugeordnet sind.
+  </Accordion>
+  <Accordion title="Alle Daten stehen in einer einzigen Spalte">
+    Die Datei nutzt ein anderes Trennzeichen, z. B. Tabulator. Speichern Sie sie in Excel erneut als CSV mit Semikolon.
+  </Accordion>
+  <Accordion title="Die Mitglieder können nicht buchen">
+    Ordnen Sie beim Import die Spalte **Mitgliedschaft freigeschaltet** zu – oder schalten Sie die Personen danach in der [Mitgliederliste](/mitglieder) frei. Prüfen Sie außerdem, ob E-Mail oder Mobilnummer eingetragen sind.
+  </Accordion>
+</AccordionGroup>

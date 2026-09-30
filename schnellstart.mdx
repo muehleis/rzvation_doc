@@ -1,18 +1,94 @@
 ---
 title: "Schnellstart"
 sidebarTitle: "Schnellstart"
-description: "Der schnellste Weg zur Onlinereservierung."
+description: "Der schnellste Weg zur ersten Online-Buchung – mit dem Einrichtungsassistenten."
+keywords: ["Einrichtung", "Einrichtungsassistent", "Assistent", "Erste Schritte", "Mietobjekt", "Einrichtung fortsetzen", "Checkliste", "Setup"]
 ---
 
-Was möchtest Du anbieten?
+Rzvation hat einen **Einrichtungsassistenten**. Er fragt nur das Nötigste ab und legt alles Weitere mit sinnvollen Standardwerten an. So ist Ihr Angebot in wenigen Minuten buchbar.
+
+<Info>
+  **Wo finden Sie das?** In der linken Leiste unter **Einrichtung** – oder auf der [Übersicht](/uebersicht) über **Einrichtung fortsetzen**.
+</Info>
+
+<Note>
+  Bevor der Assistent startet, tragen Sie einmalig die Basis- und Kontaktdaten Ihrer Organisation ein. Siehe [Konto erstellen](/konto-erstellen).
+</Note>
+
+Was möchten Sie anbieten?
 
 <Tabs>
-  <Tab title="Reservierungen / Vermietungen">
-    Nach der Anlage des Benutzerkontos, logge Dich in Dein Dashboard ein.
+  <Tab title="Räume, Plätze, Geräte">
+    Wählen Sie **Etwas anderes**, wenn Sie einen Raum, Sportplatz, ein Fahrzeug oder einen Gegenstand zu bestimmten Zeiten vermieten oder vergeben möchten.
 
-    - [ ] Gebe Name und Adresse Deiner Organisation an und wähle die Art Deiner Organisation unter [https://www.rzvation.com/organisation](https://www.rzvation.com/organisation)
-    - [ ] Ergänze Deine Kontaktdaten als unser Ansprechpartner und die Kontaktdaten Deiner Organisation unter [https://www.rzvation.com/organisation#organisation-panel-kontakt](https://www.rzvation.com/organisation#organisation-panel-kontakt)
+    Der Assistent führt Sie durch vier Schritte. Rechts sehen Sie dabei eine **Vorschau**, wie Ihr Angebot auf der Buchungsseite aussieht.
+
+    <Steps>
+      <Step title="Angebot – Was möchten Sie vermieten?">
+        Geben Sie eine **Bezeichnung** für die Art Ihres Angebots ein, zum Beispiel „Tennisplätze“ oder „Räume“. Unter diesem Namen erscheint es auf Ihrer Buchungsseite. Daraus wird eine [Kategorie](/kategorien).
+      </Step>
+      <Step title="Objekt – Wie heißt Ihr erstes Objekt?">
+        Geben Sie den **Namen** des konkreten Raums, Platzes oder Gegenstands ein, zum Beispiel „Platz 1“ oder „Vereinsheim“. Weitere [Objekte](/objekt-anlegen-bearbeiten) können Sie später ergänzen.
+      </Step>
+      <Step title="Zeiten – Wann kann gebucht werden?">
+        Wählen Sie die **Wochentage** und die Uhrzeit **Von** und **Bis**. Diese Zeiten gelten ab heute jede Woche. Feiertage und abweichende Zeiten tragen Sie später als [Ausnahmen](/verfuegbarkeit#ausnahmen) ein.
+      </Step>
+      <Step title="Dauer – Wie lange wird gebucht?">
+        Legen Sie fest, in welchen Schritten gebucht wird (**30 Minuten**, **1 Stunde** oder **2 Stunden**) und wie lange **höchstens am Stück**. Klicken Sie auf **Mietobjekt anlegen**.
+      </Step>
+    </Steps>
+
+    Fertig! Ihr Objekt ist sofort buchbar. Buchungen sind zunächst **kostenlos** und werden **ohne Freigabe** bestätigt. Mit **Buchungsseite öffnen** sehen Sie die Seite so wie Ihre Besucher. Mit **Link kopieren** holen Sie sich die Adresse, um sie zum Beispiel auf Ihrer Webseite zu verlinken.
+
+    ### Was der Assistent für Sie anlegt
+
+    | Was | Wo Sie es später ändern |
+    |---|---|
+    | Eine Buchungsseite | **Organisation → Buchungsseiten** ([Anleitung](/buchungsseiten-erstellen-bearbeiten)) |
+    | Eine Verfügbarkeitsvorlage „Standardwoche“ | **Objekte → Verfügbarkeiten** ([Anleitung](/verfuegbarkeit)) |
+    | Eine Kategorie | **Objekte → Kategorien** ([Anleitung](/kategorien)) |
+    | Ein Objekt | **Objekte → Objekte** ([Anleitung](/objekt-anlegen-bearbeiten)) |
+
+    ### Weitere Möglichkeiten
+
+    Nach dem Abschluss schlägt der Assistent die nächsten sinnvollen Schritte vor:
+
+    - **Preise festlegen** – Kategorie kostenpflichtig machen, auch mit Mitgliederpreis. → [Kategorien](/kategorien#abrechnung)
+    - **Buchungen vorab prüfen** – „Freigabe erforderlich“ einschalten. → [Kategorien](/kategorien#freigabe-erforderlich)
+    - **Weitere Objekte anlegen** → [Objekte](/objekt-anlegen-bearbeiten)
+    - **Buchbare Zeiten anpassen** – Standardwoche ändern, Feiertage eintragen. → [Verfügbarkeit](/verfuegbarkeit)
+    - **Buchungsseite, Zahlungsarten und Pflichtangaben** → [Buchungsseiten](/buchungsseiten-erstellen-bearbeiten)
+    - **Onlinezahlung einrichten** – Stripe verbinden. → [Zahlungen](/zahlungen)
+    - **Team einladen** – weiteren Personen Zugriff geben. → [Benutzer](/benutzer)
   </Tab>
+
   <Tab title="Veranstaltung">
+    Wählen Sie **Veranstaltung mit Eintrittskarten**, wenn Sie zum Beispiel für ein Vereinsfest oder ein Konzert Karten verkaufen oder vergeben möchten.
+
+    Der Assistent zeigt eine **Checkliste**. Erledigte Schritte werden abgehakt. Über die Schaltfläche beim jeweiligen Schritt springen Sie direkt an die richtige Stelle.
+
+    <Steps>
+      <Step title="Buchungsseite anlegen">
+        Öffnen Sie **Organisation → Buchungsseiten**, klicken Sie auf **Neue Buchungsseite** und wählen Sie die Art **Event**. → [Anleitung](/buchungsseiten-erstellen-bearbeiten)
+      </Step>
+      <Step title="Veranstaltung und Eintrittskarten anlegen">
+        Öffnen Sie **Events**, erfassen Sie Datum und Ort und legen Sie mindestens eine Kartenart an (z. B. „Erwachsene“). → [Anleitung](/veranstaltung-anlegen)
+      </Step>
+      <Step title="Buchungsseite prüfen">
+        Ist alles erledigt, öffnen Sie mit **Buchungsseite öffnen** die Seite aus Sicht Ihrer Besucher.
+      </Step>
+    </Steps>
+
+    <Tip>
+      Für Veranstaltungen brauchen Sie kein kostenpflichtiges Abonnement. Es fällt nur bei Onlinezahlungen eine kleine Gebühr pro Buchung an. Siehe [Abonnement](/abonnement).
+    </Tip>
   </Tab>
 </Tabs>
+
+## Einrichtungsweg wechseln
+
+Sie haben sich verklickt oder möchten doch etwas anderes anbieten? Im Assistenten finden Sie unten **Stattdessen eine Veranstaltung planen** bzw. **Einrichtungsweg wechseln**. Alle Angaben können Sie außerdem jederzeit im jeweiligen Menü ändern.
+
+<Warning>
+  Für die Auswahl im Assistenten brauchen Sie die Berechtigung, Organisationseinstellungen zu ändern. Als Administrator haben Sie diese immer.
+</Warning>

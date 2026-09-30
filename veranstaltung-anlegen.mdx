@@ -1,4 +1,98 @@
 ---
 title: "Veranstaltung anlegen"
 sidebarTitle: "Veranstaltung anlegen"
+description: "So legen Sie ein Event mit Kartentypen, Preisen, Kontingenten und Zusatzoptionen an."
+keywords: ["Event anlegen", "Neues Event", "Veranstaltung anlegen", "Veranstaltung bearbeiten", "Event löschen", "Event absagen", "Abgesagt", "Kartentyp", "Kartenart", "Ticketart", "Erwachsene", "Kinder", "VIP", "Kontingent", "Ausverkauft", "Preis", "Zusatzoption", "Parkplatz", "Zeltplatz", "Veranstaltungsort", "Beginn", "Ende"]
 ---
+
+<Info>
+  **Wo finden Sie das?** In der linken Leiste unter **Events**.
+  <br />Direkt öffnen: [www.rzvation.com/events](https://www.rzvation.com/events)
+</Info>
+
+<Note>
+  **Vorher nötig:** eine Buchungsseite der Art **Event**. Legen Sie diese unter **Organisation → Buchungsseiten → Neue Buchungsseite** an. Siehe [Buchungsseiten erstellen](/buchungsseiten-erstellen-bearbeiten).
+</Note>
+
+## Die Eventliste
+
+Die Tabelle zeigt je Veranstaltung: **Name**, **Buchungsseite**, **Datum** mit Uhrzeit, **Karten** (Anzahl der Kartentypen und Buchungen), **Status** (Aktiv, Inaktiv oder Abgesagt) sowie **Bearbeiten** und **Löschen**.
+
+## Neues Event anlegen
+
+Klicken Sie auf **Neues Event**. Rechts öffnet sich ein Fenster.
+
+### Grunddaten
+
+| Feld | Was tragen Sie ein? |
+|---|---|
+| **Buchungsseite** | Die Event-Buchungsseite, auf der die Karten angeboten werden. |
+| **Name** | Der Name der Veranstaltung, z. B. „Jubiläumsdisko“. |
+| **Slug** | Kurzform für die Technik. Wird automatisch erzeugt. |
+| **Kurzbeschreibung** | Optional, bis 500 Zeichen. Erscheint auf der Buchungsseite. |
+| **Veranstaltungsort** | z. B. „Vereinsheim Musterstadt“. |
+| **Beginn** | Datum und Uhrzeit des Beginns. |
+| **Ende** | Datum und Uhrzeit des Endes. |
+
+### Status
+
+| Schalter | Bedeutung |
+|---|---|
+| **Aktiv** | Nur aktive Veranstaltungen erscheinen auf der Buchungsseite. Schalten Sie ihn aus, um das Event vorzubereiten, ohne es schon zu zeigen – oder um es nach dem Termin auszublenden. |
+| **Abgesagt** | Die Veranstaltung fällt aus. Sie verschwindet von der Buchungsseite und ihre Karten werden beim Einlass nicht mehr angenommen. |
+
+<Warning>
+  Wenn Sie ein Event absagen, werden bereits gezahlte Beträge **nicht** automatisch erstattet und die Gäste nicht automatisch informiert. Erstatten Sie Onlinezahlungen einzeln in der Buchung (siehe [Zahlung erstatten](/reservierungen-verwalten#zahlung-erstatten)) und informieren Sie Ihre Gäste.
+</Warning>
+
+### Kartentypen
+
+Im Reiter **Kartentypen** legen Sie fest, welche Karten es gibt. Mindestens **ein** Kartentyp ist nötig.
+
+| Feld | Was tragen Sie ein? |
+|---|---|
+| **Bezeichnung** | z. B. „Erwachsene“, „Kinder bis 12“, „VIP“. |
+| **Preis (€)** | Preis je Karte. `0` für kostenlose Karten. |
+| **Kontingent** | Wie viele Karten es von diesem Typ gibt. Leer = unbegrenzt. |
+
+Mit **Kartentyp hinzufügen** ergänzen Sie weitere Typen, mit **Entfernen** löschen Sie einen.
+
+Ist das Kontingent erschöpft, zeigt die Buchungsseite **Ausverkauft**.
+
+### Zusatzoptionen
+
+Im Reiter **Zusatzoptionen** bieten Sie Extras an – zum Beispiel Parkplätze, Zeltplätze oder Schließfächer.
+
+| Feld | Was tragen Sie ein? |
+|---|---|
+| **Bezeichnung** | z. B. „Zeltplatz“. |
+| **Beschreibung (optional)** | z. B. „Zeltplatz für eine Person, 3 Nächte“. |
+| **Preis (€)** | Preis je Stück. |
+| **Kontingent** | Wie viele es insgesamt gibt. Leer = unbegrenzt. |
+| **Max. pro Buchung** | Wie viele eine Person höchstens buchen darf. |
+| **Aktiv** | Nur aktive Zusatzoptionen werden angeboten. |
+
+Klicken Sie zum Schluss auf **Event speichern**.
+
+## Event bearbeiten
+
+Klicken Sie in der Liste auf **Bearbeiten**, ändern Sie die Angaben und klicken Sie auf **Änderungen speichern**.
+
+<Note>
+  Kartentypen und Zusatzoptionen, die schon gebucht wurden, lassen sich nicht entfernen. Rzvation weist Sie mit einem Hinweis darauf hin. Setzen Sie bei Zusatzoptionen stattdessen **Aktiv** auf aus.
+</Note>
+
+## Event löschen
+
+Klicken Sie auf **Löschen** und bestätigen Sie. Ein Event mit **aktiven Buchungen** lässt sich nicht löschen. Setzen Sie es stattdessen auf **Abgesagt** oder schalten Sie **Aktiv** aus.
+
+## Wie geht es weiter?
+
+<CardGroup cols={2}>
+  <Card title="Eintrittskarten gestalten" icon="palette" href="/eintrittskarten-gestalten">
+    Vorlage, Veranstalter, Ort und Bild für die Karten festlegen.
+  </Card>
+  <Card title="Einlass vorbereiten" icon="qrcode" href="/einlass-scanner">
+    Smartphones als Scanner für den Eingang einrichten.
+  </Card>
+</CardGroup>
