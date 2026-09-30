@@ -1,26 +1,15 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "rzvation",
+  "name": "Rzvation Hilfe",
+  "description": "Anleitungen und Hilfe zu Rzvation – Reservierungen, Verfügbarkeiten und Veranstaltungen einfach verwalten.",
   "colors": {
-    "primary": "#9c59e6",
-    "light": "#c084fc",
-    "dark": "#7c3aed"
+    "primary": "#2b6cb0",
+    "light": "#5b9bd5",
+    "dark": "#1e4d8c"
   },
-  "favicon": {
-    "light": "/images/logo_32x32.png",
-    "dark": "/images/logo_32x32.png"
-  },
+  "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
     "languages": [
       {
         "language": "de",
@@ -31,7 +20,9 @@
             "pages": [
               "einfuehrung",
               "konto-erstellen",
-              "schnellstart"
+              "schnellstart",
+              "uebersicht",
+              "stichwortverzeichnis"
             ]
           },
           {
@@ -51,14 +42,17 @@
               "kontakt",
               "buchungsseiten-erstellen-bearbeiten",
               "einstellungen",
-              "zahlungen"
+              "zahlungen",
+              "abonnement",
+              "av-vertrag"
             ]
           },
           {
             "group": "Benutzerverwaltung",
             "pages": [
               "rollen-berechtigungen",
-              "benutzer"
+              "benutzer",
+              "persoenliche-einstellungen"
             ]
           },
           {
@@ -72,20 +66,23 @@
           {
             "group": "Veranstaltungen",
             "pages": [
-              "veranstaltung-anlegen"
+              "veranstaltung-anlegen",
+              "eintrittskarten-gestalten",
+              "einlass-scanner"
             ]
           },
           {
             "group": "Mitglieder / Personen",
             "pages": [
-              "importieren",
-              "mitglieder"
+              "mitglieder",
+              "importieren"
             ]
           },
           {
             "group": "Reservierungen",
             "pages": [
-              "reservierungen-verwalten"
+              "reservierungen-verwalten",
+              "zahlungsuebersicht"
             ]
           }
         ]
@@ -94,7 +91,7 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/images/logo_48x48.png",
+    "dark": "/logo/dark.svg",
     "href": "https://www.rzvation.com"
   },
   "navbar": {
@@ -106,9 +103,33 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Zur Anmeldung",
+      "href": "https://www.rzvation.com/login"
     }
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Rzvation",
+        "items": [
+          {
+            "label": "Startseite",
+            "href": "https://www.rzvation.com"
+          },
+          {
+            "label": "Impressum",
+            "href": "https://www.rzvation.com/impressum"
+          },
+          {
+            "label": "Datenschutz",
+            "href": "https://www.rzvation.com/datenschutz"
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "prompt": "Suchen, z. B. „Mitgliederpreis“ oder „Buchung stornieren“ …"
   },
   "contextual": {
     "options": [
@@ -116,10 +137,7 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "perplexity"
     ]
   },
   "icons": {

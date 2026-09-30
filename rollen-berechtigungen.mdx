@@ -1,4 +1,118 @@
 ---
 title: "Rollen und Berechtigungen"
 sidebarTitle: "Rollen und Berechtigungen"
+description: "Mit Rollen legen Sie fest, was ein Benutzer in der Verwaltung sehen und ändern darf."
+keywords: ["Rolle", "Rollen", "Berechtigung", "Berechtigungen", "Rechte", "Zugriffsrechte", "Admin", "Administrator", "Leserechte", "Rolle anlegen", "read", "create", "update", "delete", "refund-payment", "Scanner-Rechte"]
 ---
+
+Eine **Rolle** ist ein Bündel von **Berechtigungen**. Sie legen einmal fest, was eine Rolle darf – zum Beispiel „Platzwart: darf Reservierungen sehen und anlegen“ – und weisen sie dann beliebig vielen [Benutzern](/benutzer) zu.
+
+<Info>
+  **Wo finden Sie das?** **Benutzer → Rollen & Berechtigungen**
+  <br />Direkt öffnen: [www.rzvation.com/users#user-panel-roles](https://www.rzvation.com/users#user-panel-roles)
+</Info>
+
+## Die Rolle „Admin“
+
+Die Rolle **Admin** gibt es immer. Sie hat **alle Berechtigungen** und lässt sich nicht ändern. Wer das Konto angelegt hat, ist automatisch Admin.
+
+## Eigene Rolle anlegen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Klicken Sie auf **Rolle anlegen**.
+  </Step>
+  <Step title="Namen vergeben">
+    Tragen Sie einen **Rollennamen** ein, z. B. „Platzwart“ oder „Kasse“.
+  </Step>
+  <Step title="Berechtigungen wählen">
+    Setzen Sie Haken bei allen **Berechtigungen**, die die Rolle haben soll (siehe Tabelle unten).
+  </Step>
+  <Step title="Speichern">
+    Klicken Sie auf **Rolle speichern**.
+  </Step>
+</Steps>
+
+Zum Ändern klicken Sie in der Liste auf **Bearbeiten**.
+
+<Warning>
+  Wenn Sie eine Rolle ändern, gilt die Änderung sofort für **alle** Benutzer mit dieser Rolle.
+</Warning>
+
+## So sind Berechtigungen aufgebaut
+
+Die Namen der Berechtigungen sind englisch und folgen immer demselben Muster:
+
+| Wortteil | Bedeutung |
+|---|---|
+| `read-…` | **ansehen** – der Menüpunkt wird angezeigt |
+| `create-…` | **neu anlegen** |
+| `update-…` | **ändern** |
+| `delete-…` | **löschen** |
+
+<Tip>
+  Ohne `read-…` sieht ein Benutzer den Bereich gar nicht. Geben Sie also immer zuerst das Leserecht und dann bei Bedarf die weiteren Rechte.
+</Tip>
+
+## Alle Berechtigungen
+
+| Berechtigung | Was sie erlaubt | Wo in Rzvation |
+|---|---|---|
+| `read-organisation-settings` | Organisation, Einrichtung und AV-Vertrag ansehen | **Organisation**, **Einrichtung**, **AV-Vertrag** |
+| `update-organisation` | Organisationsdaten, Buchungsseiten, Zahlungen und Abo ändern | **Organisation** |
+| `create-organisation` | derzeit ohne Wirkung | – |
+| `delete-organisation` | Die gesamte Organisation löschen | **Einstellungen → Profil** |
+| `read-user-settings` | Benutzer und Rollen ansehen | **Benutzer** |
+| `create-user` | Benutzer anlegen | **Benutzer** |
+| `update-user` | Benutzer bearbeiten, Rollen anlegen und ändern | **Benutzer** |
+| `delete-user` | Benutzer löschen | **Benutzer** |
+| `read-resource-settings` | Objekte ansehen | **Objekte** |
+| `create-resource` | Objekte anlegen und kopieren | **Objekte** |
+| `update-resource` | Objekte bearbeiten | **Objekte** |
+| `delete-resource` | Objekte löschen | **Objekte** |
+| `read-resource-category-settings` | derzeit ohne eigene Wirkung – Kategorien sind mit `read-resource-settings` sichtbar | **Objekte → Kategorien** |
+| `create-resource-category` | Kategorien anlegen | **Objekte → Kategorien** |
+| `update-resource-category` | Kategorien bearbeiten | **Objekte → Kategorien** |
+| `delete-resource-category` | Kategorien löschen | **Objekte → Kategorien** |
+| `read-availability-settings` | Verfügbarkeiten ansehen | **Objekte → Verfügbarkeiten** |
+| `create-availability` | Vorlagen und Ausnahmen anlegen | **Objekte → Verfügbarkeiten** |
+| `update-availability` | Vorlagen, Zeitregeln und Ausnahmen ändern | **Objekte → Verfügbarkeiten** |
+| `delete-availability` | Vorlagen und Ausnahmen löschen | **Objekte → Verfügbarkeiten** |
+| `read-event-settings` | Veranstaltungen ansehen | **Events** |
+| `create-event` | Veranstaltungen anlegen | **Events** |
+| `update-event` | Veranstaltungen bearbeiten | **Events** |
+| `delete-event` | Veranstaltungen löschen | **Events** |
+| `read-ticket-settings` | Gestaltung der Eintrittskarten ansehen | **Organisation → Buchungsseiten → Eintrittskarte** |
+| `update-ticket` | Gestaltung der Eintrittskarten ändern | **Organisation → Buchungsseiten → Eintrittskarte** |
+| `read-person-settings` | Mitglieder ansehen und freischalten | **Mitglieder**, Übersicht |
+| `create-person` | Mitglieder anlegen und importieren | **Mitglieder** |
+| `update-person` | Mitglieder bearbeiten und freischalten | **Mitglieder** |
+| `delete-person` | Mitglieder löschen | **Mitglieder** |
+| `read-reservations` | Reservierungen und Zahlungsübersicht ansehen | **Reservierungen**, **Auswertungen** |
+| `create-reservation` | Schnellbuchung auf der Übersicht nutzen | **Übersicht** |
+| `update-reservation` | Buchungen freigeben, ablehnen, stornieren, bearbeiten, als bezahlt markieren | **Reservierungen** |
+| `delete-reservation` | derzeit ohne Wirkung – Buchungen werden storniert, nicht gelöscht | – |
+| `refund-payment` | Onlinezahlungen erstatten | **Reservierungen → Detailansicht** |
+| `read-scanner-settings` | Einlass-Übersicht und Scanner-Geräte ansehen | **Einlass** |
+| `update-scanner` | Scanner-Geräte verwalten, manuell einchecken und Check-ins zurücknehmen | **Einlass** |
+
+## Beispiele für Rollen
+
+<AccordionGroup>
+  <Accordion title="Platzwart – sieht, wer heute bucht">
+    `read-reservations`, `create-reservation`
+  </Accordion>
+  <Accordion title="Buchungsverwaltung – prüft und bearbeitet Buchungen">
+    `read-reservations`, `create-reservation`, `update-reservation`, `read-person-settings`
+  </Accordion>
+  <Accordion title="Kasse – kümmert sich um Zahlungen">
+    `read-reservations`, `update-reservation`, `refund-payment`
+  </Accordion>
+  <Accordion title="Mitgliederverwaltung – pflegt die Mitgliederliste">
+    `read-person-settings`, `create-person`, `update-person`, `delete-person`
+  </Accordion>
+  <Accordion title="Einlass – Helfer am Eingang">
+    `read-scanner-settings`, `update-scanner`
+    <br />Tipp: Für reine Scan-Geräte am Eingang brauchen Sie gar keinen Benutzer. Siehe [Einlass & Scanner](/einlass-scanner).
+  </Accordion>
+</AccordionGroup>

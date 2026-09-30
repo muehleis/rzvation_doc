@@ -1,4 +1,100 @@
 ---
 title: "Mitglieder"
 sidebarTitle: "Mitglieder"
+description: "Mitglieder, Gäste oder Kunden anlegen, bearbeiten und freischalten – für Buchungen nur für Mitglieder und Mitgliederpreise."
+keywords: ["Mitglied", "Mitglieder", "Person", "Personen", "Gäste", "Kunden", "Besucher", "Helfer", "Mitglied anlegen", "Mitglied hinzufügen", "Freischalten", "Freischaltung", "Mitgliedsantrag", "Freischaltung beantragen", "Freigabe ausstehend", "Interne ID", "Kundennummer", "Mitgliedsnummer", "Mitgliederpreis", "Nur für Mitglieder"]
 ---
+
+In der Mitgliederliste verwalten Sie die Personen, die zu Ihrer Organisation gehören – zum Beispiel Vereinsmitglieder, Stammkunden oder Helfer.
+
+<Info>
+  **Wo finden Sie das?** In der linken Leiste unter **Mitglieder** (Personen-Symbol).
+  <br />Direkt öffnen: [www.rzvation.com/people](https://www.rzvation.com/people)
+</Info>
+
+<Note>
+  Je nach [Nutzerbezeichnung](/einstellungen#nutzerbezeichnung) heißt dieser Bereich bei Ihnen auch **Gäste**, **Helfer**, **Kunden** oder **Besucher**. Gemeint ist immer dieselbe Liste.
+</Note>
+
+## Wofür brauche ich die Mitgliederliste?
+
+Die Liste ist wichtig, wenn Sie …
+
+- Buchungen **nur für Mitglieder** erlauben möchten,
+- einzelne Objekte **nur für Mitglieder** anbieten möchten,
+- Mitgliedern einen **Mitgliederpreis** geben möchten.
+
+Auf einer Buchungsseite mit **Nur Mitglieder dürfen buchen** gibt die Person ihre **E-Mail-Adresse oder Handynummer** ein. Rzvation sucht sie in dieser Liste. Nur wenn sie gefunden wird **und freigeschaltet** ist, darf sie buchen – und bekommt die Mitgliederpreise.
+
+<Tip>
+  Wenn jeder bei Ihnen buchen darf und es keine Mitgliederpreise gibt, brauchen Sie die Mitgliederliste nicht.
+</Tip>
+
+## Die Liste
+
+Die Tabelle zeigt je Person: **Name**, **Kunden-ID**, **Mitgliedschaft** (**Freigeschaltet** oder **Freigabe ausstehend**) und die Aktionen **Freischalten**, **Bearbeiten** und **Löschen**.
+
+## Mitglied hinzufügen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Klicken Sie auf **Mitglied hinzufügen**. Rechts öffnet sich ein Fenster.
+  </Step>
+  <Step title="Daten eintragen">
+    | Feld | Pflicht | Hinweis |
+    |---|---|---|
+    | **Interne ID** | ja | Die Kunden- oder Mitgliedsnummer. Rzvation schlägt die nächste freie Nummer vor (siehe [Einstellungen](/einstellungen#nächste-kundennummer)). |
+    | **Anrede** | – | Männlich, Weiblich, Divers oder Keine Angabe. |
+    | **Name** | ja | Nachname. |
+    | **Vorname** | ja | |
+    | **Geburtsdatum** | – | |
+    | **Straße**, **Adresszusatz**, **PLZ**, **Ort**, **Bundesland**, **Land** | je nach Einstellung | Pflicht, wenn Sie das bei der Buchungsseite so festgelegt haben. |
+    | **E-Mail**, **Mobilnummer**, **Telefonnummer** | mind. eine Angabe | Über E-Mail oder Mobilnummer weist sich die Person beim Buchen aus. |
+  </Step>
+  <Step title="Freischalten">
+    Schalten Sie **Mitgliedschaft freigeschaltet** ein, damit die Person sofort buchen darf.
+  </Step>
+  <Step title="Speichern">
+    Klicken Sie auf **Mitglied speichern**.
+  </Step>
+</Steps>
+
+<Tip>
+  Sie haben viele Mitglieder in einer Excel-Liste? Importieren Sie sie in einem Rutsch. Siehe [Importieren](/importieren).
+</Tip>
+
+## Mitglieder freischalten
+
+Personen können auch selbst eine Mitgliedschaft beantragen:
+
+1. Auf einer Buchungsseite mit **Nur Mitglieder dürfen buchen** klickt die Person auf **Freischaltung beantragen**.
+2. Sie gibt Vorname, Nachname, E-Mail und Mobilnummer ein (Adresse optional) und klickt auf **Antrag senden**.
+3. Sie erhalten eine E-Mail an Ihre [E-Mail für Benachrichtigungen](/kontakt#e-mail-für-benachrichtigungen).
+4. Die Person erscheint in der Liste mit **Freigabe ausstehend** und auf der [Übersicht](/uebersicht#mitglieder-zur-freischaltung) unter **Mitglieder zur Freischaltung**.
+
+So schalten Sie frei: Klicken Sie in der Liste oder auf der Übersicht auf **Freischalten**. Die Person erhält eine E-Mail und kann ab sofort buchen.
+
+<Note>
+  Ein Antrag legt **kein Benutzerkonto** an. Die Person bucht weiterhin ohne Passwort, nur mit E-Mail oder Handynummer.
+</Note>
+
+## Mitglied bearbeiten
+
+Klicken Sie auf **Bearbeiten**, ändern Sie die Daten und klicken Sie auf **Änderungen speichern**. Um eine Mitgliedschaft zu **sperren**, schalten Sie **Mitgliedschaft freigeschaltet** aus.
+
+## Mitglied löschen
+
+Klicken Sie auf **Löschen** und bestätigen Sie. Der Eintrag wird dauerhaft entfernt.
+
+<Warning>
+  Bitte beachten Sie den Datenschutz: Löschen Sie Personen, die nicht mehr zu Ihrer Organisation gehören.
+</Warning>
+
+## Benötigte Berechtigungen
+
+| Aktion | Berechtigung |
+|---|---|
+| Liste ansehen, auf der Übersicht freischalten | `read-person-settings` |
+| Anlegen und importieren | `create-person` |
+| Bearbeiten und freischalten | `update-person` |
+| Löschen | `delete-person` |

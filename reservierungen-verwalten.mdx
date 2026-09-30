@@ -1,4 +1,134 @@
 ---
 title: "Reservierungen verwalten"
 sidebarTitle: "Reservierungen verwalten"
+description: "Buchungen suchen, freigeben, ablehnen, stornieren, bearbeiten, als bezahlt markieren und erstatten."
+keywords: ["Reservierungen", "Buchungen", "Buchung suchen", "Filter", "Buchungsreferenz", "Freigeben", "Genehmigen", "Ablehnen", "Ablehnungsgrund", "Stornieren", "Stornierung", "Absagen", "Buchung bearbeiten", "Umbuchen", "Termin ändern", "Objekt ändern", "Als bezahlt markieren", "Barzahlung", "Zahlungsbestätigung", "Erstatten", "Erstattung", "Rückerstattung", "Geld zurück", "Notizen", "Ticket anzeigen", "Detailansicht"]
 ---
+
+Unter **Reservierungen** finden Sie alle Buchungen – für Objekte und für Veranstaltungen. Hier prüfen, ändern und stornieren Sie Buchungen.
+
+<Info>
+  **Wo finden Sie das?** In der linken Leiste unter **Reservierungen** (Kalender-Symbol).
+  <br />Direkt öffnen: [www.rzvation.com/bookings](https://www.rzvation.com/bookings)
+</Info>
+
+Was die Status bedeuten und welche E-Mails verschickt werden, erklärt die Seite [Reservierungen](/reservierungen).
+
+## Buchungen finden
+
+### Suche
+
+Geben Sie in **Buchung suchen** einen Teil von **Buchungsreferenz**, **Name**, **E-Mail**, **Telefon**, **Objekt** oder **Event** ein.
+
+### Filter
+
+| Filter | Auswahl |
+|---|---|
+| **Buchungstyp** | Alle Typen, Ressourcen, Events |
+| **Buchungsstatus** | Alle Status, Offen (wartet auf Freigabe), Bestätigt, Abgeschlossen, Storniert |
+| **Zahlungsstatus** | Alle, Alle unbezahlten, Offen, Ausstehend, Bezahlt, Fehlgeschlagen, Erstattet, Teilweise erstattet, Beanstandet, Kostenlos |
+| **Zahlungsart** | Alle, Online, Vor Ort, Rechnung, Kostenlos, Nicht festgelegt |
+| **Buchung von** / **Buchung bis** | Zeitraum des Termins |
+
+Mit **Filter zurücksetzen** sehen Sie wieder alle Buchungen.
+
+### Die Liste
+
+Die Liste zeigt: **Gebucht am**, **Zeit** (Termin), **Buchungsreferenz**, **Kunde / Gruppe**, **Objekt** bzw. Event, **Zahlungsart**, **Zahlungsstatus** und **Status**. Ein Klick auf **Gebucht am** oder **Zeit** sortiert die Liste.
+
+Bei Buchungen mit Eintrittskarten öffnet der Link **Ticket** die Karten der Buchung.
+
+Über das Menü **⋯** am Zeilenende erreichen Sie schnell: **Details anzeigen**, **Genehmigen**, **Ablehnen**, **Stornieren** und **Als bezahlt markieren**.
+
+## Die Detailansicht
+
+Klicken Sie auf die **Buchungsreferenz**. Die Detailansicht zeigt:
+
+- **Buchungsdaten** – Objekt oder Veranstaltung, Datum, Uhrzeit, Zusatzoptionen, Preis, Erstellungsdatum
+- **Kontaktdaten** – Name, E-Mail, Telefon, Mobil, Adresse
+- **Zahlung** – Zahlungsart, Zahlungsstatus, Währung, bezahlt am, Erstattungen, Notizen
+- bei Stornierung: den **Stornierungsgrund**, wer storniert hat und wann
+
+Mit **Zurück zur Liste** kehren Sie zurück.
+
+## Buchung freigeben oder ablehnen
+
+Buchungen in Kategorien mit **Freigabe erforderlich** haben zuerst den Status **Wartet auf Freigabe**. Sie werden per E-Mail informiert. Auf der [Übersicht](/uebersicht) zeigt die Kachel **Offen zu bestätigen**, wie viele warten.
+
+<Tabs>
+  <Tab title="Freigeben">
+    Klicken Sie in der Detailansicht auf **Freigeben** (in der Liste: **Genehmigen**). Die Buchung ist bestätigt, die Kundin erhält eine E-Mail. Eine vorgemerkte Onlinezahlung wird jetzt abgebucht.
+
+    <Note>
+      Ist bei der Kategorie **Einzelne Objekte wählbar** ausgeschaltet, können Sie vor der Freigabe unter **Objekt** wählen, welches Objekt die Kundin bekommt. Rzvation macht einen Vorschlag.
+    </Note>
+  </Tab>
+  <Tab title="Ablehnen">
+    Klicken Sie auf **Ablehnen** und wählen Sie einen Grund: **Defekt**, **Geschlossen**, **Durch manuelle Buchung belegt** oder **Sonstiges**. Bestätigen Sie mit **Ablehnen**.
+
+    Die Buchung wird storniert, die Kundin erhält eine E-Mail. Eine vorgemerkte Onlinezahlung wird aufgehoben.
+  </Tab>
+</Tabs>
+
+## Buchung stornieren
+
+Eine bestätigte Buchung können Sie stornieren, zum Beispiel wenn der Platz gesperrt werden muss.
+
+1. Klicken Sie auf **Buchung stornieren**.
+2. Geben Sie einen **Grund** ein.
+3. Bestätigen Sie mit **Buchung stornieren**.
+
+Die Kundin erhält eine E-Mail. Der Termin ist wieder frei.
+
+<Warning>
+  Eine Stornierung erstattet **kein** Geld. Wurde online bezahlt, erstatten Sie die Zahlung zusätzlich (siehe unten).
+</Warning>
+
+## Buchung bearbeiten
+
+Klicken Sie in der Detailansicht auf **Buchung bearbeiten**. Jetzt können Sie ändern:
+
+- **Objekt**, **Datum**, **Beginn**, **Ende** und **Preis** (bei Objekt-Buchungen),
+- die **Kontaktdaten**,
+- **Zahlungsart**, **Zahlungsstatus** und **Notizen**.
+
+Klicken Sie auf **Speichern** – oder **Abbrechen**, um nichts zu ändern.
+
+Danach fragt Rzvation: **Kundin oder Kunde über die Änderungen benachrichtigen?** Sie sehen eine Liste der Änderungen (vorher → nachher). Mit **Ja, E-Mail senden** erhält die Kundin die E-Mail „Ihre Buchung wurde geändert“. Mit **Nein** wird nichts verschickt.
+
+<Note>
+  - Bei Veranstaltungsbuchungen lässt sich kein Objekt zuweisen.
+  - Solange die Zahlungsart **Online** ist, ist der Zahlungsstatus gesperrt – er wird automatisch von Stripe aktualisiert. Stellen Sie auf **Vor Ort** oder **Rechnung** um, wenn Sie den Status von Hand ändern müssen.
+  - **Notizen** sind nur intern sichtbar.
+</Note>
+
+## Als bezahlt markieren
+
+Bei den Zahlungsarten **Vor Ort** und **Rechnung** tragen Sie den Zahlungseingang selbst ein:
+
+1. Wählen Sie in der Liste im Menü **⋯** **Als bezahlt markieren** (oder in der [Zahlungsübersicht](/zahlungsuebersicht)).
+2. Bestätigen Sie. Das gilt für alle Positionen dieser Buchungsreferenz.
+3. Rzvation fragt: **Zahlungsbestätigung senden?** Mit **Ja, senden** erhält die Kundin eine Zahlungsbestätigung per E-Mail.
+
+## Zahlung erstatten
+
+Onlinezahlungen erstatten Sie direkt in Rzvation – zum Beispiel nach einer Stornierung.
+
+1. Öffnen Sie die Detailansicht der Buchung.
+2. Klicken Sie im Bereich **Zahlung** auf **Zahlung erstatten**.
+3. Optional: Geben Sie einen **Grund** ein.
+4. Klicken Sie auf **Jetzt erstatten**.
+
+Der **gesamte** noch nicht erstattete Betrag geht über Stripe an die zahlende Person zurück. Die Gebühren werden mit erstattet. Der Status wechselt zu **Erstattet**, sobald Stripe die Erstattung bestätigt. Alle Erstattungen stehen mit Betrag, Datum, Bearbeiter und Grund unter **Erstattungen**.
+
+<Note>
+  Die Schaltfläche erscheint nur bei **bezahlten Onlinezahlungen** und nur mit der Berechtigung `refund-payment`. Bar oder per Rechnung gezahltes Geld erstatten Sie selbst außerhalb von Rzvation.
+</Note>
+
+## Benötigte Berechtigungen
+
+| Aktion | Berechtigung |
+|---|---|
+| Reservierungen ansehen | `read-reservations` |
+| Freigeben, ablehnen, stornieren, bearbeiten, als bezahlt markieren | `update-reservation` |
+| Onlinezahlung erstatten | `refund-payment` |
