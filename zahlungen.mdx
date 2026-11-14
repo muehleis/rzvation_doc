@@ -1,97 +1,67 @@
 ---
-title: "Zahlungen akzeptieren (Stripe)"
-sidebarTitle: "Zahlungen"
-description: "Stripe-Konto verbinden, damit Ihre Kundinnen und Kunden direkt beim Buchen online bezahlen können."
-keywords: ["Zahlungen", "Onlinezahlung", "Online bezahlen", "Kreditkarte", "Stripe", "Stripe verbinden", "Stripe-Konto", "Account-ID", "acct_", "Auszahlung", "Auszahlungen", "Währung", "Standardwährung", "Euro", "CHF", "Gebühren", "Zahlungsdienstleister"]
+title: "Zahlungskonto (Onlinezahlung)"
+sidebarTitle: "Zahlungskonto"
+description: "Das Zahlungskonto einrichten, damit Ihre Gäste beim Buchen online bezahlen."
+keywords: ["Zahlungen", "Zahlungskonto", "Onlinezahlung", "Online bezahlen", "Kreditkarte", "Karte", "Lastschrift", "Stripe", "Stripe-Konto", "Einrichten", "Auszahlung", "Bankkonto", "Gebühren", "Kosten", "Zahlungsart", "Vorgemerkt", "Erstattung"]
 ---
 
-Wenn Ihre Kundinnen und Kunden direkt beim Buchen online bezahlen sollen, verbinden Sie Rzvation mit **Stripe**. Stripe ist ein bekannter Zahlungsdienstleister. Er nimmt die Zahlungen sicher entgegen und zahlt das Geld an Ihre Organisation aus.
+Damit Ihre Gäste beim Buchen direkt online bezahlen, richten Sie einmal ein **Zahlungskonto** ein. Die Abwicklung übernimmt unser Zahlungspartner **Stripe**. Das Geld wird auf Ihr Bankkonto ausgezahlt.
 
 <Info>
-  **Wo finden Sie das?** **Organisation → Zahlungen akzeptieren**
-  <br />Direkt öffnen: [www.rzvation.com/organisation#organisation-panel-zahlungen](https://www.rzvation.com/organisation#organisation-panel-zahlungen)
+  **Wo finden Sie das?** Kreis mit Ihren Initialen oben rechts → **Einstellungen** → **Zahlungskonto**. Auch der Link **Einrichten** bei der Zahlungsart eines Events oder Objekts führt dorthin.
 </Info>
 
 <Note>
-  Sie brauchen Stripe **nur für Onlinezahlungen**. Die Zahlungsarten **Vor Ort** und **Rechnung** funktionieren ohne Stripe.
+  Für Zahlungen **auf Rechnung** oder **vor Ort** brauchen Sie kein Zahlungskonto.
 </Note>
 
-## Gut zu wissen, bevor Sie starten
+## Was kostet das?
 
-- Mit einem Stripe-Konto schließen Sie einen **eigenen Vertrag mit Stripe** ab.
-- Für das Stripe-Konto selbst fallen im Standardtarif keine monatlichen Grundgebühren und keine Einrichtungsgebühren an. Gebühren entstehen nur, wenn Zahlungen verarbeitet werden. Siehe [Preise auf stripe.com](https://stripe.com/de/pricing).
-- Zusätzlich behält Rzvation bei Onlinezahlungen eine kleine Gebühr ein. Die Höhe hängt von Ihrem [Tarif](/abonnement) ab.
-- Die Einrichtung dauert ca. **10–15 Minuten** und findet direkt in Rzvation statt – ohne Weiterleitung zu stripe.com.
-
-Halten Sie bereit: Angaben zu Ihrer Organisation, zur vertretungsberechtigten Person und die **Bankverbindung** für die Auszahlungen.
-
-## Stripe-Konto verbinden
-
-Rzvation fragt zuerst: **Haben Sie bereits ein Stripe-Konto, das mit Rzvation verbunden werden soll?**
-
-<Tabs>
-  <Tab title="Neues Konto einrichten">
-    <Steps>
-      <Step title="Auswahl">
-        Klicken Sie auf **Nein, neues Konto einrichten**.
-      </Step>
-      <Step title="Einrichtung starten">
-        Klicken Sie auf **Einrichtung starten**. Es öffnet sich das Einrichtungsformular von Stripe direkt in Rzvation.
-      </Step>
-      <Step title="Angaben machen">
-        Folgen Sie den Schritten und machen Sie die geforderten Angaben.
-      </Step>
-      <Step title="Fertig">
-        Nach dem Abschluss schließt sich das Formular. Rzvation zeigt Ihnen den Status Ihres Kontos.
-      </Step>
-    </Steps>
-  </Tab>
-  <Tab title="Vorhandenes Konto verbinden">
-    <Steps>
-      <Step title="Auswahl">
-        Klicken Sie auf **Ja, Account-ID eingeben**.
-      </Step>
-      <Step title="Account-ID eintragen">
-        Tragen Sie Ihre Stripe **Account-ID** ein. Sie beginnt mit `acct_`. Sie finden sie im Stripe-Dashboard unter *Einstellungen → Konto-Details*.
-      </Step>
-      <Step title="Prüfen">
-        Klicken Sie auf **Verbinden & prüfen**.
-      </Step>
-    </Steps>
-  </Tab>
-</Tabs>
-
-## Status Ihres Stripe-Kontos
-
-Nach dem Verbinden zeigt die Karte **Stripe-Account**:
-
-| Angabe | Bedeutung |
+| | |
 |---|---|
-| **Account-ID** | Die Kennung Ihres Stripe-Kontos. |
-| **Status** | **Aktiv** – alles in Ordnung. **Einrichtung ausstehend** – es fehlen noch Angaben. **Restricted/Disabled** (rot) – Stripe hat das Konto eingeschränkt; prüfen Sie Ihr Stripe-Dashboard. |
-| **Zahlungen** | **Aktiv**, wenn Sie Onlinezahlungen annehmen können. |
-| **Auszahlungen** | **Aktiv**, wenn Stripe Geld auf Ihr Bankkonto überweisen kann. |
+| **Rzvation** | Keine Gebühr pro Buchung oder Zahlung. |
+| **Zahlungspartner Stripe** | Eine eigene Gebühr je Onlinezahlung, direkt von Stripe abgerechnet. Siehe [Preise auf stripe.com](https://stripe.com/de/pricing). |
+| **Rechnung und vor Ort** | Kostenlos. |
 
-Fehlen noch Angaben, klicken Sie auf **Einrichtung fortsetzen**. Der Status aktualisiert sich automatisch, sobald Stripe etwas ändert.
+Mit dem Zahlungskonto schließen Sie einen eigenen Vertrag mit Stripe ab.
 
-## Standardwährung
+## Zahlungskonto einrichten
 
-Unter **Einstellungen** wählen Sie die **Standardwährung**: **EUR – Euro**, **CHF – Schweizer Franken**, **USD – US-Dollar** oder **GBP – Britisches Pfund**. Klicken Sie auf **Speichern**.
+Die Einrichtung dauert etwa **10 Minuten** und läuft direkt in Rzvation, ohne Wechsel zu stripe.com. Halten Sie bereit: Angaben zu Ihrem Verein oder Unternehmen, zur vertretungsberechtigten Person und die **Bankverbindung** für die Auszahlungen.
 
-## Onlinezahlung auf der Buchungsseite einschalten
+<Steps>
+  <Step title="Starten">
+    Klicken Sie auf **Zahlungskonto einrichten**. Das Formular von Stripe öffnet sich.
+  </Step>
+  <Step title="Angaben machen">
+    Folgen Sie den Schritten. Sie können jederzeit unterbrechen und später mit **Einrichtung fortsetzen** weitermachen.
+  </Step>
+  <Step title="Fertig">
+    Ist alles vollständig, zeigt der Reiter **Eingerichtet · Zahlungen sind möglich**.
+  </Step>
+</Steps>
 
-Das Verbinden allein reicht noch nicht. Schalten Sie die Onlinezahlung bei jeder gewünschten Buchungsseite ein:
+### Der Stand Ihres Zahlungskontos
 
-**Organisation → Buchungsseiten → Bearbeiten → Zahlungsarten → Onlinezahlung**
+| Anzeige | Bedeutung |
+|---|---|
+| **Noch nicht eingerichtet** | Sie haben noch nicht begonnen. |
+| **Begonnen · es fehlen noch Angaben** | Klicken Sie auf **Einrichtung fortsetzen**. |
+| **Eingerichtet · Zahlungen sind möglich** | Sie können Onlinezahlung anbieten. Mit **Angaben bei Stripe ändern** passen Sie zum Beispiel die Bankverbindung an. |
 
-Siehe [Buchungsseiten erstellen und bearbeiten](/buchungsseiten-erstellen-bearbeiten#zahlungsarten).
+## Onlinezahlung anbieten
+
+Das Einrichten allein reicht noch nicht. Wählen Sie bei jedem Angebot unter **Bezahlung** zusätzlich die Zahlungsart **Online**:
+
+- bei einem [Event](/events#bezahlung) für dieses Event,
+- bei einem [Objekt](/objekte#bezahlung) für alle Objekte der Buchungsseite.
 
 ## Wie läuft eine Onlinezahlung ab?
 
-1. Die Kundin wählt bei der Buchung **Onlinezahlung** und klickt auf **Weiter zur Zahlung**.
-2. Sie gibt ihre Zahlungsdaten ein.
-3. **Ohne Freigabe:** Der Betrag wird sofort abgebucht.
-   **Mit Freigabe:** Der Betrag wird nur **vorgemerkt** und erst abgebucht, wenn Sie die Buchung freigeben. Lehnen Sie ab, wird die Vormerkung aufgehoben.
-4. Stripe zahlt das Geld – abzüglich der Gebühren – auf Ihr Bankkonto aus.
+1. Der Gast wählt **Online** und klickt auf **Weiter zur Zahlung**.
+2. Er bezahlt, zum Beispiel per Karte.
+3. **Ohne Freigabe:** Der Betrag wird sofort belastet, die Buchung steht auf **Bezahlt**.
+   **Mit Freigabe:** Der Betrag wird nur **vorgemerkt** und erst belastet, wenn Sie die Buchung freigeben. Lehnen Sie ab, wird die Vormerkung aufgehoben.
+4. Stripe zahlt das Geld abzüglich der Stripe-Gebühr auf Ihr Bankkonto aus.
 
-Erstattungen machen Sie direkt in der Buchung. Siehe [Zahlung erstatten](/reservierungen-verwalten#zahlung-erstatten).
+Erstattungen lösen Sie in der Buchung aus. Siehe [Zahlung erstatten](/buchungen#zahlung-erstatten).

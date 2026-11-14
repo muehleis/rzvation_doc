@@ -1,77 +1,43 @@
 ---
 title: "Benutzer"
 sidebarTitle: "Benutzer"
-description: "Weitere Personen in die Verwaltung einladen, Rollen zuweisen und Zugänge entfernen."
-keywords: ["Benutzer", "Benutzer anlegen", "Team", "Kollegen", "Mitarbeiter", "Vorstand", "Zugang", "Zugriff", "Einladen", "Initialpasswort", "Anfangspasswort", "Admin", "Administrator", "Benutzer löschen"]
+description: "Weitere Personen in die Verwaltung einladen und den Zugang wieder entziehen."
+keywords: ["Benutzer", "Team", "Kollegen", "Mitarbeiter", "Vorstand", "Zugang", "Zugriff", "Einladen", "Benutzer einladen", "Anfangspasswort", "Zugang entziehen", "Benutzer löschen", "Rechte", "Rollen"]
 ---
 
-**Benutzer** sind die Personen, die in der Verwaltung von Rzvation mitarbeiten – zum Beispiel Vorstandsmitglieder, Platzwarte oder Kolleginnen im Büro.
+**Benutzer** arbeiten mit Ihnen in der Verwaltung: Sie melden sich mit einem eigenen Konto an und verwalten Angebote und Buchungen gemeinsam mit Ihnen. Wenn Sie allein arbeiten, müssen Sie hier nichts einrichten.
 
 <Info>
-  **Wo finden Sie das?** In der linken Leiste unter **Benutzer** → Reiter **Benutzer**.
-  <br />Direkt öffnen: [www.rzvation.com/users](https://www.rzvation.com/users)
+  **Wo finden Sie das?** Kreis mit Ihren Initialen oben rechts → **Einstellungen** → **Benutzer**.
 </Info>
 
 <Note>
-  **Benutzer** und **Mitglieder** sind nicht dasselbe:
-  - **Benutzer** arbeiten in der Verwaltung mit und melden sich mit Passwort an.
-  - **Mitglieder** (bzw. Gäste, Kunden) buchen über die Buchungsseite und brauchen kein Konto. Siehe [Mitglieder](/mitglieder).
+  **Benutzer** und **Mitglieder** sind nicht dasselbe. Benutzer arbeiten in der Verwaltung mit. Mitglieder buchen über die Buchungsseite und brauchen kein Konto. Siehe [Mitglieder](/mitglieder).
 </Note>
 
-## Die Benutzerliste
-
-Die Tabelle zeigt alle Benutzer Ihrer Organisation mit **Name**, **E-Mail**, **Aktiv** und **Rolle**.
-
-## Benutzer anlegen
-
-<Tip>
-  Soll die neue Person nicht alles dürfen? Legen Sie **zuerst** eine passende [Rolle](/rollen-berechtigungen) an und weisen Sie diese dann dem Benutzer zu.
-</Tip>
+## Benutzer einladen
 
 <Steps>
-  <Step title="Anlegen starten">
-    Klicken Sie auf **Benutzer anlegen**.
+  <Step title="Einladen">
+    Klicken Sie auf **Benutzer einladen** und tragen Sie Name und E-Mail-Adresse der Person ein.
   </Step>
-  <Step title="Daten eintragen">
-    | Feld | Was tragen Sie ein? |
-    |---|---|
-    | **Name** | Vor- und Nachname, z. B. „Max Mustermann“. |
-    | **E-Mail** | Die E-Mail-Adresse der Person. Damit meldet sie sich an. |
-    | **Initialpasswort** | Ein erstes Passwort. Die Person muss es beim ersten Anmelden ändern. |
-    | **Rolle** | **Admin** (darf alles) oder eine eigene Rolle. |
-  </Step>
-  <Step title="Speichern">
-    Klicken Sie auf **Benutzer speichern**.
+  <Step title="Senden">
+    Klicken Sie auf **Einladung senden**.
   </Step>
 </Steps>
 
-Die neue Person erhält eine E-Mail „Neues Konto bei Rzvation“ mit ihrem Anfangspasswort und einem Link zur Anmeldung. Beim ersten Anmelden wird sie aufgefordert, ein eigenes Passwort festzulegen.
+Die Person erhält eine E-Mail mit einem Anfangspasswort. Beim ersten Anmelden legt sie ein eigenes Passwort fest. Bis dahin steht in der Liste **eingeladen, hat sich noch nicht angemeldet**.
+
+<Note>
+  Jeder Benutzer hat **vollen Zugriff**, genau wie Sie.
+</Note>
 
 <Warning>
   Jede E-Mail-Adresse kann nur einmal in Rzvation vorkommen. Hat die Person schon ein eigenes Rzvation-Konto, verwenden Sie eine andere Adresse oder wenden Sie sich an den [Support](mailto:support@rzvation.com).
 </Warning>
 
-## Benutzer bearbeiten
+## Zugang entziehen
 
-Klicken Sie in der Zeile auf **Bearbeiten**. Sie können **Name**, **E-Mail** und **Rolle** ändern. Klicken Sie auf **Änderungen speichern**.
+Klicken Sie beim Benutzer auf **Zugang entziehen** und bestätigen Sie die Rückfrage. Die Person kann sich danach nicht mehr anmelden; ihr Konto wird gelöscht. Angebote und Buchungen bleiben erhalten.
 
-Das Passwort können Sie hier nicht ändern. Das macht jede Person selbst unter [Persönliche Einstellungen](/persoenliche-einstellungen#passwort) oder über **Passwort vergessen?** auf der Anmeldeseite.
-
-## Benutzer löschen
-
-Klicken Sie in der Zeile auf **Löschen**. Die Person kann sich danach nicht mehr in Ihrer Organisation anmelden.
-
-<Warning>
-  Es muss immer **mindestens ein Admin** geben. Den letzten Admin können Sie weder löschen noch ihm eine andere Rolle geben.
-</Warning>
-
-## Benötigte Berechtigungen
-
-| Aktion | Berechtigung |
-|---|---|
-| Benutzerliste sehen | `read-user-settings` |
-| Benutzer anlegen | `create-user` |
-| Benutzer bearbeiten, Rollen verwalten | `update-user` |
-| Benutzer löschen | `delete-user` |
-
-Mehr dazu unter [Rollen und Berechtigungen](/rollen-berechtigungen).
+Ihren eigenen Zugang können Sie hier nicht entziehen. Ihr eigenes Konto löschen Sie unter [Mein Konto](/mein-konto#benutzerkonto-löschen).

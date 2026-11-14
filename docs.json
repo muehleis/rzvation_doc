@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Rzvation Hilfe",
-  "description": "Anleitungen und Hilfe zu Rzvation – Reservierungen, Verfügbarkeiten und Veranstaltungen einfach verwalten.",
+  "description": "Anleitungen und Hilfe zu Rzvation – Events, Objekte und Buchungen einfach verwalten.",
   "colors": {
     "primary": "#2b6cb0",
     "light": "#5b9bd5",
@@ -21,74 +21,130 @@
               "einfuehrung",
               "konto-erstellen",
               "schnellstart",
-              "uebersicht",
-              "stichwortverzeichnis"
+              "uebersicht"
             ]
           },
           {
-            "group": "Grundkonzepte",
+            "group": "Angebote",
             "pages": [
-              "organisation",
-              "buchungsseiten",
-              "ressourcen",
-              "veranstaltungen",
-              "reservierungen"
+              "events",
+              "objekte",
+              "buchungsseite",
+              "so-buchen-ihre-gaeste"
             ]
           },
           {
-            "group": "Organisation",
+            "group": "Rund um Ihre Angebote",
             "pages": [
-              "basisdaten",
-              "kontakt",
-              "buchungsseiten-erstellen-bearbeiten",
-              "einstellungen",
-              "zahlungen",
-              "abonnement",
-              "av-vertrag"
-            ]
-          },
-          {
-            "group": "Benutzerverwaltung",
-            "pages": [
-              "rollen-berechtigungen",
-              "benutzer",
-              "persoenliche-einstellungen"
-            ]
-          },
-          {
-            "group": "Ressourcen (Objekte)",
-            "pages": [
-              "verfuegbarkeit",
-              "kategorien",
-              "objekt-anlegen-bearbeiten"
-            ]
-          },
-          {
-            "group": "Veranstaltungen",
-            "pages": [
-              "veranstaltung-anlegen",
+              "e-mail-texte",
               "eintrittskarten-gestalten",
               "einlass-scanner"
             ]
           },
           {
-            "group": "Mitglieder / Personen",
+            "group": "Buchungen",
+            "pages": [
+              "buchungen"
+            ]
+          },
+          {
+            "group": "Mitglieder",
             "pages": [
               "mitglieder",
               "importieren"
             ]
           },
           {
-            "group": "Reservierungen",
+            "group": "Einstellungen",
             "pages": [
-              "reservierungen-verwalten",
-              "zahlungsuebersicht"
+              "mein-konto",
+              "anbieterdaten",
+              "zahlungen",
+              "benutzer",
+              "abonnement",
+              "av-vertrag"
+            ]
+          },
+          {
+            "group": "Nachschlagen",
+            "pages": [
+              "stichwortverzeichnis"
             ]
           }
         ]
       }
     ]
   },
+  "redirects": [
+    {
+      "source": "/organisation",
+      "destination": "/anbieterdaten"
+    },
+    {
+      "source": "/basisdaten",
+      "destination": "/anbieterdaten"
+    },
+    {
+      "source": "/kontakt",
+      "destination": "/anbieterdaten"
+    },
+    {
+      "source": "/einstellungen",
+      "destination": "/anbieterdaten"
+    },
+    {
+      "source": "/buchungsseiten",
+      "destination": "/buchungsseite"
+    },
+    {
+      "source": "/buchungsseiten-erstellen-bearbeiten",
+      "destination": "/buchungsseite"
+    },
+    {
+      "source": "/ressourcen",
+      "destination": "/objekte"
+    },
+    {
+      "source": "/kategorien",
+      "destination": "/objekte"
+    },
+    {
+      "source": "/verfuegbarkeit",
+      "destination": "/objekte"
+    },
+    {
+      "source": "/objekt-anlegen-bearbeiten",
+      "destination": "/objekte"
+    },
+    {
+      "source": "/veranstaltungen",
+      "destination": "/events"
+    },
+    {
+      "source": "/veranstaltung-anlegen",
+      "destination": "/events"
+    },
+    {
+      "source": "/reservierungen",
+      "destination": "/buchungen"
+    },
+    {
+      "source": "/reservierungen-verwalten",
+      "destination": "/buchungen"
+    },
+    {
+      "source": "/zahlungsuebersicht",
+      "destination": "/buchungen"
+    },
+    {
+      "source": "/rollen-berechtigungen",
+      "destination": "/benutzer"
+    },
+    {
+      "source": "/persoenliche-einstellungen",
+      "destination": "/mein-konto"
+    }
+  ],
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",

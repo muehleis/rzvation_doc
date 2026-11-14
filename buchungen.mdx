@@ -1,0 +1,101 @@
+---
+title: "Buchungen"
+sidebarTitle: "Buchungen"
+description: "Buchungen und Anmeldungen finden, freigeben, ablehnen, ändern und stornieren, Zahlungen vermerken und erstatten."
+keywords: ["Buchung", "Buchungen", "Anmeldung", "Reservierung", "Bestellung", "Zu erledigen", "Freigeben", "Freigabe", "Ablehnen", "Absage", "Stornieren", "Stornierung", "Grund", "Ändern", "Termin verschieben", "Betrag ändern", "Kontakt", "Notiz", "Verlauf", "Als bezahlt markieren", "Zahlungsbeleg", "Rechnung", "Mahnung", "Offene Rechnungen", "Erstatten", "Erstattung", "Rückzahlung", "Exportieren", "Export", "CSV", "Excel", "Suche", "Filter", "Buchungsnummer"]
+---
+
+Unter **Buchungen** finden Sie alle Anmeldungen zu Events und alle Buchungen von Objekten. Eine Zahl an **Buchungen** in der Kopfleiste zeigt an, dass neue Buchungen eingegangen sind.
+
+<Info>
+  **Wo finden Sie das?** In der Kopfleiste unter **Buchungen**. Die Buchungen eines einzelnen Angebots sehen Sie auch auf dessen Seite im Reiter **Anmeldungen** bzw. **Buchungen**.
+</Info>
+
+## Zu erledigen
+
+Ganz oben steht, was Ihre Aufmerksamkeit braucht:
+
+- **Wartende Buchungen** bei Angeboten, die Sie selbst freigeben. Mit **Freigeben** oder **Ablehnen** entscheiden Sie direkt hier.
+- **Offene Rechnungen**, die seit mehr als 14 Tagen nicht bezahlt sind. Mit **Als bezahlt markieren** vermerken Sie den Zahlungseingang.
+
+## Die Liste
+
+Darunter stehen die Buchungen, gruppiert nach Eingang: **Heute eingegangen**, **Gestern**, **In den letzten 7 Tagen**, **Früher**.
+
+| Filter | Möglichkeiten |
+|---|---|
+| **Zeitraum** | **Kommende**, **Vergangene** oder **Storniert**. |
+| **Angebot** | Ein bestimmtes Event oder Objekt, oder **Alle Angebote**. |
+| **Suche** | Name, E-Mail oder Buchungsnummer. |
+
+Eine Zeile ist eine **Bestellung**: alles, was mit derselben Buchungsnummer gebucht wurde, bei Events also alle Tickets einer Anmeldung. Freigabe, Ablehnung und Stornierung gelten immer für die ganze Bestellung.
+
+**Exportieren** lädt die aktuelle Auswahl als CSV-Datei herunter, die Sie zum Beispiel in Excel öffnen.
+
+## Eine Buchung öffnen
+
+Ein Klick auf eine Zeile öffnet die Buchung. Sie ist in Abschnitte gegliedert:
+
+| Abschnitt | Inhalt |
+|---|---|
+| **Buchung** | Buchungsnummer, Angebot, Termin, Umfang, Positionen und Betrag. |
+| **Kontakt** | Name, E-Mail, Telefon und Anschrift des Gasts. |
+| **Notiz** | Ein Vermerk nur für Sie, der Gast sieht ihn nicht. |
+| **Zahlung** | Zahlungsart, Stand, Vermerke zu Rechnung und Mahnung, Erstattungen. |
+| **Verlauf** | Wann die Buchung eingegangen ist, freigegeben, bezahlt, erstattet oder storniert wurde, mit Bearbeiter und Grund. |
+
+Kontakt und Notiz ändern Sie mit **Bearbeiten**. Diese Änderungen erscheinen nicht im Verlauf.
+
+## Freigeben oder ablehnen
+
+Bei Angeboten mit der Einstellung **Ich gebe jede Buchung selbst frei** wartet jede neue Buchung auf Sie.
+
+- **Freigeben** bestätigt die Buchung. Der Gast erhält eine E-Mail. Eine vorgemerkte Onlinezahlung wird jetzt belastet.
+- **Ablehnen** verlangt einen **Grund**: **Defekt**, **Geschlossen**, **Durch manuelle Buchung belegt** oder **Sonstiges**. Der Gast erhält eine E-Mail mit dem Grund. Eine vorgemerkte Onlinezahlung wird freigegeben, der Gast zahlt nichts.
+
+Ist der Zeitraum inzwischen anderweitig belegt, weist Rzvation beim Freigeben darauf hin.
+
+## Buchung ändern
+
+Bei einer Objekt-Buchung klicken Sie im Abschnitt **Buchung** auf **Ändern**. Sie können **Objekt**, **Beginn**, **Ende** und **Betrag** ändern.
+
+<Warning>
+  - Ob der neue Zeitraum frei ist, wird **nicht** geprüft. Schauen Sie vorher in die Buchungen des Objekts.
+  - Der Betrag ändert sich **nicht** von selbst mit dem Zeitraum. Passen Sie ihn bei Bedarf an.
+</Warning>
+
+Mit **Gast per E-Mail über die Änderung informieren** erhält der Gast eine Nachricht mit dem neuen Stand.
+
+Bei einer Event-Anmeldung steht der Termin am Event. Hier ändern Sie nur den Betrag einer Position.
+
+## Buchung stornieren
+
+Klicken Sie auf **Stornieren**, geben Sie einen **Grund** ein und bestätigen Sie mit **Buchung stornieren**. Der Gast erhält eine E-Mail mit dem Grund, und die Plätze bzw. der Zeitraum werden wieder frei.
+
+<Warning>
+  Eine Stornierung erstattet eine bereits geleistete Zahlung **nicht** automatisch. Erstatten Sie Onlinezahlungen bei Bedarf separat, siehe unten.
+</Warning>
+
+## Zahlung vermerken
+
+Bei Zahlung **auf Rechnung** oder **vor Ort** halten Sie im Abschnitt **Zahlung** fest, was geschehen ist:
+
+| Aktion | Was passiert |
+|---|---|
+| **Rechnung als gestellt vermerken** | Hält fest, dass Sie eine Rechnung verschickt haben. |
+| **Mahnung als verschickt vermerken** | Hält fest, dass Sie gemahnt haben. |
+| **Als bezahlt markieren** | Vermerkt den Zahlungseingang. Rzvation fragt, ob der Gast eine Bestätigung erhalten soll: **E-Mail senden** oder **Nicht senden**. |
+
+<Note>
+  Rechnungen und Mahnungen schreiben und verschicken Sie selbst. Rzvation erstellt dabei nichts, es hält nur fest, dass es geschehen ist.
+</Note>
+
+Onlinezahlungen werden automatisch als bezahlt geführt. Ändern Sie dort den Stand nicht von Hand.
+
+## Zahlung erstatten
+
+Nur bei **Onlinezahlungen**: **Erstatten** zahlt den Betrag über Stripe an den Gast zurück. Optional geben Sie einen **Grund** an. Die Erstattung erscheint im Abschnitt **Zahlung** und im **Verlauf**.
+
+<Warning>
+  Eine Erstattung lässt sich nicht rückgängig machen. Sie storniert die Buchung nicht; stornieren Sie sie bei Bedarf zusätzlich.
+</Warning>
