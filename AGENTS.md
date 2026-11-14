@@ -1,33 +1,46 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Hinweise für die Rzvation-Hilfe
 
-# Documentation project instructions
+## Über dieses Projekt
 
-## About this project
+- Hilfeseiten für Rzvation, gebaut mit [Mintlify](https://mintlify.com)
+- Seiten sind MDX-Dateien mit YAML-Frontmatter (`title`, `sidebarTitle`, `description`, `keywords`)
+- Navigation und Einstellungen stehen in `docs.json`
+- Inhalte beschreiben die Anwendung aus dem Repository `muehleis/rzvation`. Bezeichnungen von Menüs, Reitern, Feldern und Schaltflächen werden genau so übernommen, wie sie in der Oberfläche stehen.
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+## Zielgruppe und Sprache
 
-## Terminology
+- Deutsch, Anrede **Sie**
+- Einfache Sprache für nicht technisch versierte Leserinnen und Leser: kurze Sätze, ein Gedanke pro Satz, Fachbegriffe erklären
+- Tonalität nach der Markenrichtlinie: sachlich, freundlich, präzise – keine Superlative, kein Marketing
+- Oberflächenelemente fett: Klicken Sie auf **Speichern**
+- Menüwege mit Pfeil: **Organisation → Buchungsseiten**
+- Berechtigungsnamen und Dateinamen als Code: `read-reservations`
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+## Aufbau jeder Seite
 
-## Style preferences
+1. Ein bis zwei Sätze, worum es geht
+2. `<Info>`-Kasten „**Wo finden Sie das?**“ mit Menüweg und – falls möglich – Direktlink
+3. Schritt-für-Schritt-Anleitungen mit `<Steps>`, Felder als Tabelle
+4. Hinweise mit `<Note>`, `<Tip>`, `<Warning>`
+5. `keywords` im Frontmatter pflegen, damit die Suche auch Synonyme findet
 
-{/* Add any project-specific style rules below */}
+Neue Begriffe zusätzlich im **Stichwortverzeichnis** (`stichwortverzeichnis.mdx`) eintragen.
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+## Terminologie
 
-## Content boundaries
+| Verwenden | Hinweis |
+|---|---|
+| Objekt | In der Oberfläche heißt es „Objekte“. „Ressource“ nur als Synonym erwähnen. |
+| Veranstaltung / Event | Menüpunkt heißt „Events“. |
+| Buchung / Reservierung | Beides gleichwertig; Menüpunkt heißt „Reservierungen“. |
+| Mitglieder | Bezeichnung ist je Organisation einstellbar (Gäste, Kunden …). |
+| Benutzer | Personen mit Zugang zur Verwaltung – nicht mit Mitgliedern verwechseln. |
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+## Prüfen vor dem Veröffentlichen
+
+```bash
+npx mint validate
+npx mint broken-links --check-anchors
+```
+
+Anker enthalten Umlaute, z. B. `#e-mail-für-benachrichtigungen`.

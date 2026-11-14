@@ -1,4 +1,102 @@
 ---
 title: "Kategorien"
 sidebarTitle: "Kategorien"
+description: "Kategorien fassen gleichartige Objekte zusammen und legen gemeinsame Regeln fest: Dauer, Preise, Freigabe und Zugang."
+keywords: ["Kategorie", "Kategorien", "Kategorie anlegen", "Gruppe", "Angebot", "Freigabe", "Freigabe erforderlich", "Genehmigung", "Bestätigung", "Einzelne Objekte wählbar", "Zeiteinheit", "Mindestdauer", "Maximale Buchungsdauer", "Dauer anpassbar", "Preis", "Preise", "Kostenpflichtig", "Mitgliederpreis", "Abrechnen je", "Nur für Mitglieder"]
 ---
+
+Eine **Kategorie** fasst gleichartige Objekte zusammen, zum Beispiel „Tennisplätze“, „Besprechungsräume“ oder „E-Bikes“. Auf der Buchungsseite können Besucher nach Kategorien filtern.
+
+Die Einstellungen der Kategorie sind **Voreinstellungen** für ihre Objekte. Legen Sie ein neues Objekt an, übernimmt es diese Werte. Sie können sie danach für jedes Objekt einzeln ändern.
+
+<Info>
+  **Wo finden Sie das?** **Objekte → Kategorien**
+  <br />Direkt öffnen: [www.rzvation.com/resources#res-panel-category](https://www.rzvation.com/resources#res-panel-category)
+</Info>
+
+<Note>
+  **Vorher nötig:** eine [Buchungsseite](/buchungsseiten-erstellen-bearbeiten) der Art **Ressource** und eine [Verfügbarkeitsvorlage](/verfuegbarkeit).
+</Note>
+
+## Die Kategorienliste
+
+Die Tabelle zeigt je Kategorie: **Name**, **Buchungsseite**, **Freigabe** (Ja/Nein), die Anzahl der **Objekte** sowie **Bearbeiten** und **Löschen**.
+
+## Kategorie anlegen
+
+Klicken Sie auf **Neue Kategorie**. Rechts öffnet sich ein Fenster. Füllen Sie die Felder aus und klicken Sie auf **Kategorie speichern**.
+
+### Grundangaben
+
+| Feld | Was bedeutet es? |
+|---|---|
+| **Buchungsseite** | Auf welcher Buchungsseite die Kategorie erscheint. |
+| **Aktiv** | Nur Objekte aktiver Kategorien erscheinen auf der Buchungsseite. Schalten Sie **Aktiv** aus, um ein ganzes Angebot vorübergehend auszublenden. Bestehende Buchungen bleiben erhalten. |
+| **Freigabe erforderlich** | Siehe unten. |
+| **Name** | Der Name, den Ihre Besucher sehen, z. B. „Konferenzräume“. |
+| **Beschreibung** | Ein Text für Ihre Besucher, z. B. Ausstattung oder Hinweise. Mit Formatierung (fett, Listen, Links). |
+| **Slug** | Eine Kurzform des Namens für die Technik. Wird automatisch erzeugt. |
+| **Verfügbarkeitsvorlage** | Wann die Objekte dieser Kategorie buchbar sind. Siehe [Verfügbarkeit](/verfuegbarkeit). |
+| **Einzelne Objekte wählbar** | Siehe unten. |
+
+### Freigabe erforderlich
+
+- **Aus** – Buchungen sind sofort bestätigt.
+- **An** – Buchungen haben zuerst den Status **Offen**. Sie prüfen jede Buchung und geben sie frei oder lehnen sie ab. Die Kundin sieht beim Buchen den Hinweis, dass die Reservierung freigegeben werden muss, und die Schaltfläche heißt **Anfrage senden**.
+
+Wie Sie Buchungen freigeben, steht unter [Reservierungen verwalten](/reservierungen-verwalten#buchung-freigeben-oder-ablehnen).
+
+### Einzelne Objekte wählbar
+
+- **An** – Besucher sehen jedes Objekt einzeln und wählen z. B. gezielt „Platz 3“.
+- **Aus** – Besucher sehen nur die Kategorie, z. B. „Tennisplatz“, mit der Gesamtzahl freier Plätze. Welches Objekt sie bekommen, entscheidet Rzvation – oder Sie selbst bei der Freigabe.
+
+**Beispiel:** Bei zehn gleichen Leih-Fahrrädern ist es egal, welches Rad jemand bekommt. Schalten Sie **Einzelne Objekte wählbar** aus. Besucher buchen dann einfach „ein Fahrrad“.
+
+### Buchungsverhalten
+
+| Feld | Was bedeutet es? | Beispiel |
+|---|---|---|
+| **Zeiteinheit** | Worin gebucht wird: **Minuten**, **Stunden** oder **Tage**. | Stunden |
+| **Mindestdauer** | Die kürzeste Buchung. Gleichzeitig der Takt, in dem Startzeiten angeboten werden. | 1 → Startzeiten 9:00, 10:00, 11:00 … |
+| **Maximale Buchungsdauer** | Die längste Buchung am Stück. In derselben Einheit, nicht kleiner als die Mindestdauer. | 3 → höchstens 3 Stunden |
+| **Dauer anpassbar** | **An:** Besucher können die Dauer bis zur Höchstdauer verlängern. **Aus:** jede Buchung dauert genau die Mindestdauer. | An |
+
+### Zugang
+
+**Nur für Mitglieder** – nur Personen, die sich als freigeschaltetes Mitglied ausgewiesen haben, sehen und buchen die Objekte dieser Kategorie. Das funktioniert auf Buchungsseiten mit **Nur Mitglieder dürfen buchen**. Siehe [Mitglieder](/mitglieder).
+
+### Abrechnung
+
+Schalten Sie **Kostenpflichtig** ein, wenn die Buchung etwas kostet. Dann erscheinen:
+
+| Feld | Was bedeutet es? |
+|---|---|
+| **Abrechnen je** | Für welchen Zeitraum ein Preis gilt, in der gewählten Zeiteinheit. |
+| **Preis je Abrechnungsperiode** | Der normale Preis in Euro, z. B. `12` oder `12,50`. |
+| **Mitgliederpreis je Abrechnungsperiode** | Ein günstigerer Preis für Mitglieder (optional). |
+
+Darunter rechnet Rzvation ein Beispiel vor, z. B. „Buchung à 1 Stunden = 12,00 € (Mitglied: 8,00 €)“.
+
+**Beispiel:** Zeiteinheit **Stunden**, Abrechnen je **1**, Preis **12**. Eine 2-stündige Buchung kostet 24 €.
+
+<Note>
+  Wie bezahlt wird (vor Ort, Rechnung, online), stellen Sie bei der [Buchungsseite](/buchungsseiten-erstellen-bearbeiten#zahlungsarten) ein. Der **Mitgliederpreis** gilt nur, wenn sich die Person auf der Buchungsseite als Mitglied ausgewiesen hat.
+</Note>
+
+## Kategorie bearbeiten
+
+Klicken Sie in der Liste auf **Bearbeiten**, ändern Sie die Werte und klicken Sie auf **Änderungen speichern**.
+
+Was gilt sofort, was nicht?
+
+- **Sofort für alle Objekte** der Kategorie gelten: **Aktiv**, **Freigabe erforderlich**, **Einzelne Objekte wählbar**, **Buchungsseite**, **Name** und **Beschreibung**.
+- **Nur für neue Objekte** gelten die Voreinstellungen **Zeiteinheit**, **Mindestdauer**, **Maximale Buchungsdauer**, **Dauer anpassbar**, **Nur für Mitglieder** und die **Preise**. Bestehende Objekte ändern Sie bei Bedarf einzeln.
+
+<Warning>
+  Wenn Sie den Preis einer Kategorie ändern, bleiben die Preise der bereits angelegten Objekte gleich. Passen Sie diese einzeln an.
+</Warning>
+
+## Kategorie löschen
+
+Klicken Sie auf **Löschen** und bestätigen Sie. Eine Kategorie lässt sich nur löschen, wenn **keine Objekte** mehr darin sind. Löschen oder verschieben Sie die Objekte vorher.

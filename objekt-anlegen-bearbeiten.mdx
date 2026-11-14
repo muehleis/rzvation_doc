@@ -1,4 +1,122 @@
 ---
-title: "Objekte anlegen"
+title: "Objekte anlegen und bearbeiten"
 sidebarTitle: "Objekte"
+description: "So legen Sie buchbare Objekte an – mit Dauer, Preisen, Zusatzoptionen und gleichzeitiger Kapazität."
+keywords: ["Objekt", "Objekte", "Objekt anlegen", "Neues Objekt", "Objekt kopieren", "Objekt löschen", "Ressource anlegen", "Mietobjekt", "Aktiv", "Inaktiv", "Deaktivieren", "Ausblenden", "Gleicher Tag buchbar", "Kurzfristig", "Preis", "Mitgliederpreis", "Zusatzoption", "Zusatzoptionen", "Extras", "Add-on", "Leihmaterial", "Slots", "Kapazität", "Gleichzeitig", "Plätze", "Beschreibung"]
 ---
+
+**Objekte** sind die Dinge, die man bei Ihnen buchen kann – zum Beispiel „Platz 1“, „Vereinsheim“ oder „E-Bike 3“. Jedes Objekt gehört zu einer [Kategorie](/kategorien).
+
+<Info>
+  **Wo finden Sie das?** **Objekte → Objekte**
+  <br />Direkt öffnen: [www.rzvation.com/resources](https://www.rzvation.com/resources)
+</Info>
+
+<Note>
+  **Vorher nötig:** mindestens eine [Kategorie](/kategorien) und eine [Verfügbarkeitsvorlage](/verfuegbarkeit).
+</Note>
+
+## Die Objektliste
+
+Die Tabelle zeigt je Objekt: **Name**, **Kategorie**, **Aktiv** (Ja/Nein) und die Aktionen **Bearbeiten**, **Kopieren** und **Löschen**.
+
+## Objekt anlegen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Klicken Sie auf **Neues Objekt**. Rechts öffnet sich das Fenster **Objekt hinzufügen**.
+  </Step>
+  <Step title="Kategorie wählen">
+    Wählen Sie zuerst die **Kategorie**. Rzvation übernimmt dann deren Voreinstellungen (Dauer, Preise, Zugang) in das Formular.
+  </Step>
+  <Step title="Felder ausfüllen">
+    Tragen Sie einen **Namen** ein und passen Sie die übrigen Werte bei Bedarf an (siehe unten).
+  </Step>
+  <Step title="Speichern">
+    Klicken Sie auf **Objekt speichern**.
+  </Step>
+</Steps>
+
+## Alle Einstellungen
+
+### Grundangaben
+
+| Feld | Was bedeutet es? |
+|---|---|
+| **Name** | Der Name, den Ihre Besucher sehen, z. B. „Platz 1 (Sand)“. |
+| **Slug** | Kurzform des Namens für die Technik. Wird automatisch erzeugt. |
+| **Beschreibung** | Text für Ihre Besucher, z. B. Größe, Ausstattung, Anfahrt. Mit Formatierung. |
+| **Kategorie** | Zu welcher Kategorie das Objekt gehört. |
+| **Verfügbarkeitsvorlage** | Wann das Objekt buchbar ist. Siehe [Verfügbarkeit](/verfuegbarkeit). |
+| **Aktiv** | **An:** Das Objekt erscheint auf der Buchungsseite. **Aus:** Es ist ausgeblendet, z. B. während einer längeren Reparatur. Bestehende Buchungen bleiben erhalten. |
+
+### Buchungsverhalten
+
+| Feld | Was bedeutet es? |
+|---|---|
+| **Zeiteinheit** | **Minuten**, **Stunden** oder **Tage**. |
+| **Mindestdauer** | Die kürzeste Buchung. Gleichzeitig der Takt der Startzeiten. |
+| **Maximale Buchungsdauer** | Die längste Buchung am Stück (nicht kleiner als die Mindestdauer). |
+| **Dauer anpassbar** | **An:** Besucher können die Dauer verlängern. **Aus:** jede Buchung dauert genau die Mindestdauer. |
+| **Gleicher Tag buchbar** | **An:** Das Objekt kann auch noch am selben Tag gebucht werden. **Aus:** frühestens für morgen. |
+
+### Zugang
+
+**Nur für Mitglieder** – das Objekt ist nur für freigeschaltete Mitglieder sichtbar und buchbar. Das funktioniert auf Buchungsseiten mit **Nur Mitglieder dürfen buchen**. Siehe [Mitglieder](/mitglieder).
+
+### Abrechnung
+
+Schalten Sie **Kostenpflichtig** ein und tragen Sie ein:
+
+- **Abrechnen je** – für welchen Zeitraum der Preis gilt,
+- **Preis je Periode** – der normale Preis in Euro,
+- **Mitgliederpreis je Periode** – optional ein günstigerer Preis für Mitglieder.
+
+Rzvation zeigt darunter eine Beispielrechnung. Mehr dazu unter [Kategorien – Abrechnung](/kategorien#abrechnung).
+
+### Zusatzoptionen
+
+**Zusatzoptionen** sind Extras, die Besucher zu ihrer Buchung dazubuchen können – zum Beispiel Leihschläger, Beamer, Getränkepaket oder Endreinigung.
+
+Klicken Sie auf **+ Zusatzoption hinzufügen** und tragen Sie ein:
+
+| Feld | Was bedeutet es? |
+|---|---|
+| **Name** | z. B. „Leihschläger“ |
+| **Beschreibung** | kurze Erklärung für Ihre Besucher |
+| **Preis (€)** | Preis je Stück, `0` für kostenlos |
+| **Kontingent** | Wie viele es insgesamt gibt. Leer = unbegrenzt. |
+| **Max. pro Buchung** | Wie viele eine Person höchstens dazubuchen darf. |
+| **Aktiv** | Nur aktive Zusatzoptionen werden angeboten. |
+
+Mit **Entfernen** löschen Sie eine Zusatzoption.
+
+<Note>
+  Wurde eine Zusatzoption schon gebucht, lässt sie sich nicht löschen. Schalten Sie sie stattdessen auf **inaktiv**.
+</Note>
+
+<Tip>
+  Wie viele Zusatzoptionen an einem Tag gebraucht werden, sehen Sie auf der [Übersicht](/uebersicht#buchungen-des-tages) unter **Ressourcenübersicht**.
+</Tip>
+
+### Weiteres: Slots
+
+**Slots** legt fest, wie viele Buchungen **gleichzeitig** für dieses Objekt möglich sind. Standard ist **1** – ein Termin kann nur einmal vergeben werden.
+
+**Beispiel:** Ein Fitnesskurs hat 12 Plätze. Stellen Sie **Slots** auf **12**. Dann können 12 Personen denselben Termin buchen. Erst danach ist er voll.
+
+## Objekt bearbeiten
+
+Klicken Sie in der Liste auf **Bearbeiten**, ändern Sie die Werte und klicken Sie auf **Änderungen speichern**. Änderungen gelten für neue Buchungen. Bestehende Buchungen behalten ihren Preis.
+
+## Objekt kopieren
+
+Sie brauchen mehrere gleiche Objekte, z. B. „Platz 1“ bis „Platz 6“? Legen Sie „Platz 1“ fertig an und klicken Sie dann auf **Kopieren**. Geben Sie unter **Neuer Name** z. B. „Platz 2“ ein und klicken Sie auf **Speichern**. Alle Einstellungen werden übernommen.
+
+## Objekt löschen
+
+Klicken Sie auf **Löschen** und bestätigen Sie. Das Löschen ist nicht möglich, solange es noch **aktive Buchungen** für das Objekt gibt. Stellen Sie das Objekt in diesem Fall auf **inaktiv**.
+
+## Grenzen Ihres Tarifs
+
+Wie viele Objekte Sie anlegen können, hängt von Ihrem [Tarif](/abonnement) ab: Free 1, Starter 5, Pro 25, Business unbegrenzt. Ist die Grenze erreicht, erscheint beim Anlegen oder Kopieren ein Hinweis.

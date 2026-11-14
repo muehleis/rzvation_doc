@@ -1,4 +1,132 @@
 ---
-title: "Buchungsseiten"
+title: "Buchungsseiten erstellen und bearbeiten"
 sidebarTitle: "Buchungsseiten"
+description: "So legen Sie eine Buchungsseite an und stellen Zahlungsarten, Mitgliederzugang, Buchungsfenster und Pflichtfelder ein."
+keywords: ["Buchungsseite anlegen", "Neue Buchungsseite", "Buchungsseite bearbeiten", "Buchungsseite löschen", "Slug", "URL", "Link", "Nur Mitglieder", "Mitgliederzugang", "Suchmaschinen", "Google", "Indexierung", "Buchungsfenster", "Buchungszeitraum", "Vorausbuchung", "Eintrittskarten", "Tickets", "Zahlungsarten", "Vor Ort", "Rechnung", "Onlinezahlung", "Pflichtfelder", "Geburtsdatum", "Adresse abfragen"]
 ---
+
+Hier legen Sie Ihre Buchungsseiten an und stellen ein, wie gebucht wird. Was eine Buchungsseite ist, erklärt die Seite [Buchungsseiten](/buchungsseiten).
+
+<Info>
+  **Wo finden Sie das?** **Organisation → Buchungsseiten**
+  <br />Direkt öffnen: [www.rzvation.com/organisation#organisation-panel-buchungsseiten](https://www.rzvation.com/organisation#organisation-panel-buchungsseiten)
+</Info>
+
+## Die Liste der Buchungsseiten
+
+Die Tabelle zeigt alle Buchungsseiten mit:
+
+- **Name**
+- **Art** – Ressource oder Event
+- **URL** – der öffentliche Link. Ein Klick öffnet die Seite in einem neuen Fenster.
+- **Aktionen** – **Bearbeiten**, **Eintrittskarte** (nur bei Event-Seiten oder wenn Eintrittskarten eingeschaltet sind) und **Löschen**
+
+## Neue Buchungsseite anlegen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Klicken Sie auf **Neue Buchungsseite**. Rechts öffnet sich ein Fenster.
+  </Step>
+  <Step title="Art wählen">
+    Wählen Sie die **Art der Buchungsseite**:
+    - **Ressource** – für Zeitslot-Buchungen (Räume, Geräte, Kurse).
+    - **Event** – für Eintrittskarten zu Veranstaltungen (Feste, Konzerte).
+
+    <Warning>
+      Die Art lässt sich später **nicht mehr ändern**.
+    </Warning>
+  </Step>
+  <Step title="Einstellungen ausfüllen">
+    Füllen Sie die Felder aus (siehe unten).
+  </Step>
+  <Step title="Speichern">
+    Klicken Sie auf **Anlegen**.
+  </Step>
+</Steps>
+
+## Alle Einstellungen
+
+### Name
+
+Der Name der Buchungsseite, z. B. „Tennisanlage“ oder „Sommerfest 2026“. Mindestens 3 Zeichen. Ihre Besucher sehen den Namen als Überschrift.
+
+### Slug
+
+Der letzte Teil der Internetadresse. Er wird automatisch aus dem Namen erzeugt. Unter dem Feld sehen Sie die vollständige Adresse.
+
+Erlaubt sind Kleinbuchstaben, Zahlen und Bindestriche, z. B. `sommerfest-2026`.
+
+<Warning>
+  Wenn Sie den Slug einer veröffentlichten Seite ändern, funktionieren bereits geteilte Links nicht mehr.
+</Warning>
+
+### Nur Mitglieder dürfen buchen
+
+- **Ja** – Besucher müssen sich zuerst als Mitglied ausweisen (per E-Mail oder Handynummer). Wer nicht in Ihrer [Mitgliederliste](/mitglieder) steht, kann eine Freischaltung beantragen.
+- **Nein** – jeder darf buchen.
+
+Das Wort „Mitglieder“ richtet sich nach Ihrer [Nutzerbezeichnung](/einstellungen#nutzerbezeichnung), z. B. „Nur Kunden dürfen buchen“.
+
+<Note>
+  **Mitgliederpreise** und Objekte mit der Einstellung **Nur für Mitglieder** wirken nur, wenn sich die Person als Mitglied ausgewiesen hat. Das geschieht auf Buchungsseiten mit **Nur Mitglieder dürfen buchen: Ja**.
+</Note>
+
+### Suchmaschinen dürfen indexieren
+
+- **Ja** – Google und andere Suchmaschinen dürfen die Seite in ihre Ergebnisse aufnehmen.
+- **Nein** – die Seite erscheint nicht in Suchmaschinen. Sie ist trotzdem über den Link erreichbar. Sinnvoll z. B. für interne Buchungsseiten.
+
+### Buchungsfenster (Monate)
+
+*Nur bei Ressourcen-Buchungsseiten.* Wie weit im Voraus gebucht werden darf: **1 bis 24 Monate**. Bei 3 Monaten kann heute höchstens bis in drei Monaten gebucht werden.
+
+### Eintrittskarten
+
+*Nur bei Ressourcen-Buchungsseiten.* Bei **Ja** erhält jede bestätigte Buchung zusätzlich ein Ticket mit QR-Code – zum Beispiel für einen Kurs oder eine Führung, bei der am Eingang kontrolliert wird. Die Gestaltung stellen Sie über **Eintrittskarte** ein. Siehe [Eintrittskarten gestalten](/eintrittskarten-gestalten).
+
+Bei Event-Buchungsseiten gibt es immer Eintrittskarten.
+
+### Zahlungsarten
+
+Wählen Sie mindestens eine Zahlungsart. Sie gilt für alle kostenpflichtigen Buchungen und Zusatzoptionen dieser Buchungsseite.
+
+| Zahlungsart | Was passiert? |
+|---|---|
+| **Vor Ort** | Die Kundin bezahlt später bei Ihnen. Sie markieren die Buchung dann als bezahlt. |
+| **Rechnung** | Sie schreiben außerhalb von Rzvation eine Rechnung. In der [Zahlungsübersicht](/zahlungsuebersicht) behalten Sie offene Rechnungen im Blick. |
+| **Onlinezahlung** | Die Kundin bezahlt direkt beim Buchen. |
+
+Bieten Sie mehrere Zahlungsarten an, wählt die Kundin beim Buchen aus. Bei kostenlosen Buchungen entfällt die Auswahl.
+
+<Warning>
+  **Onlinezahlung** können Sie erst wählen, wenn Ihr Stripe-Konto verbunden und freigeschaltet ist. Siehe [Zahlungen](/zahlungen).
+</Warning>
+
+Ob etwas kostet und wie viel, stellen Sie nicht hier ein, sondern bei der [Kategorie](/kategorien#abrechnung), dem [Objekt](/objekt-anlegen-bearbeiten#abrechnung) oder der [Kartenart](/veranstaltung-anlegen#kartentypen).
+
+### Pflichtfelder bei der Buchung
+
+Name und E-Mail fragt Rzvation immer ab. Zusätzlich können Sie diese Angaben verpflichtend machen:
+
+**Straße**, **PLZ**, **Ort**, **Bundesland**, **Land**, **E-Mail**, **Telefon**, **Mobil**, **Geburtsdatum**
+
+<Tip>
+  Fragen Sie nur ab, was Sie wirklich brauchen. Weniger Pflichtfelder bedeuten weniger Abbrüche beim Buchen – und weniger Daten, die Sie schützen müssen.
+</Tip>
+
+## Buchungsseite bearbeiten
+
+Klicken Sie in der Liste auf **Bearbeiten**, ändern Sie die Einstellungen und klicken Sie auf **Speichern**. Die Art (Ressource/Event) ist dabei nur noch zur Ansicht.
+
+## Buchungsseite löschen
+
+Klicken Sie auf **Löschen** und bestätigen Sie die Nachfrage.
+
+Das Löschen ist nicht möglich, wenn …
+
+- es Ihre **einzige** Buchungsseite ist („Es muss mindestens eine Buchungsseite vorhanden sein“),
+- noch **Kategorien** zu dieser Buchungsseite gehören. Löschen oder verschieben Sie diese zuerst unter [Kategorien](/kategorien).
+
+## Grenzen Ihres Tarifs
+
+Wie viele **Ressourcen**-Buchungsseiten Sie anlegen dürfen, hängt vom [Tarif](/abonnement) ab (Free und Starter: 1, Pro: 3, Business: unbegrenzt). Ist die Grenze erreicht, erscheint ein Hinweis mit der Bitte um ein Upgrade im Reiter **Ihr Abonnement**. **Event**-Buchungsseiten sind nie begrenzt.

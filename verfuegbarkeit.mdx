@@ -1,4 +1,132 @@
 ---
 title: "Verfügbarkeit"
 sidebarTitle: "Verfügbarkeit"
+description: "Legen Sie fest, wann Ihre Objekte buchbar sind: regelmäßige Öffnungszeiten, Feiertage, Schließtage und andere Ausnahmen."
+keywords: ["Verfügbarkeit", "Verfügbarkeiten", "Öffnungszeiten", "Buchbare Zeiten", "Zeiten", "Vorlage", "Verfügbarkeitsvorlage", "Standardwoche", "Zeitregel", "Regeln", "Wochentage", "Ausnahme", "Ausnahmen", "Feiertag", "Feiertage", "Schließtag", "Geschlossen", "Urlaub", "Betriebsferien", "Wartung", "Sperrzeit", "Gültig von", "Gültig bis", "Vorlaufzeit"]
 ---
+
+Die **Verfügbarkeit** bestimmt, **wann** ein Objekt gebucht werden kann. Sie besteht aus zwei Teilen:
+
+- **Vorlagen mit Zeitregeln** – Ihre regelmäßigen Öffnungszeiten, zum Beispiel „Montag bis Freitag 8–20 Uhr“.
+- **Ausnahmen** – Abweichungen davon, zum Beispiel Feiertage, Betriebsferien oder eine Wartung.
+
+<Info>
+  **Wo finden Sie das?** **Objekte → Verfügbarkeiten**
+  <br />Direkt öffnen: [www.rzvation.com/resources/availability](https://www.rzvation.com/resources/availability)
+</Info>
+
+## Verfügbarkeitsvorlagen
+
+Eine **Vorlage** ist ein Wochenplan mit einem Gültigkeitszeitraum. Sie weisen die Vorlage später einer [Kategorie](/kategorien) oder einem [Objekt](/objekt-anlegen-bearbeiten) zu. Eine Vorlage kann für viele Objekte gelten.
+
+**Beispiel:** Die Vorlage „Sommersaison“ gilt vom 1. April bis 30. September, Mo–Fr 9–21 Uhr und Sa–So 9–18 Uhr. Alle Tennisplätze nutzen diese Vorlage.
+
+### Vorlage anlegen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Im Reiter **Verfügbarkeit** klicken Sie auf **Verfügbarkeit hinzufügen**.
+  </Step>
+  <Step title="Daten eintragen">
+    | Feld | Pflicht | Was tragen Sie ein? |
+    |---|---|---|
+    | **Name** | ja | Ein Name, z. B. „Standardwoche“ oder „Sommersaison“. |
+    | **Beschreibung** | nein | Eine Notiz für Sie. |
+    | **Gültig von** | ja | Ab diesem Tag gilt die Vorlage. |
+    | **Gültig bis** | nein | Bis zu diesem Tag gilt die Vorlage. Leer lassen = unbegrenzt. |
+  </Step>
+  <Step title="Weiter zu den Regeln">
+    Klicken Sie auf **Erstellen & Regeln festlegen**. Sie landen direkt bei den Zeitregeln.
+  </Step>
+</Steps>
+
+### Zeitregeln festlegen
+
+Zeitregeln sagen, an welchen Wochentagen zu welchen Uhrzeiten gebucht werden kann.
+
+<Steps>
+  <Step title="Uhrzeit wählen">
+    Tragen Sie unter **Zeitregel hinzufügen** die Uhrzeit **Von** und **Bis** ein, z. B. 09:00 bis 21:00.
+  </Step>
+  <Step title="Wochentage wählen">
+    Setzen Sie Haken bei den gewünschten Tagen (**Montag** bis **Sonntag**).
+  </Step>
+  <Step title="Hinzufügen">
+    Klicken Sie auf **Hinzufügen**. Die Regel erscheint in der **Übersicht**.
+  </Step>
+</Steps>
+
+Wiederholen Sie das für weitere Zeiten. **Beispiel** für unterschiedliche Zeiten am Wochenende:
+
+| Von | Bis | Mo | Di | Mi | Do | Fr | Sa | So |
+|---|---|---|---|---|---|---|---|---|
+| 09:00 | 21:00 | x | x | x | x | x | | |
+| 09:00 | 18:00 | | | | | | x | x |
+
+Auch eine Mittagspause ist möglich: Legen Sie einfach zwei Regeln an, z. B. 08:00–12:00 und 13:00–18:00.
+
+Eine Regel entfernen Sie in der Übersicht mit dem **X** in der Spalte **Löschen**. Mit **Zurück zu Vorlagen** gelangen Sie zur Liste.
+
+### Vorlage bearbeiten oder löschen
+
+In der Liste der Vorlagen finden Sie je Vorlage:
+
+- **Regeln** – öffnet die Zeitregeln,
+- **Bearbeiten** – Name, Beschreibung und Gültigkeit ändern,
+- **Löschen** – entfernt die Vorlage endgültig.
+
+<Warning>
+  Nach dem Datum **Gültig bis** ist ein Objekt mit dieser Vorlage nicht mehr buchbar. Denken Sie rechtzeitig daran, die Gültigkeit zu verlängern oder eine neue Vorlage zuzuweisen.
+</Warning>
+
+## Ausnahmen
+
+Mit **Ausnahmen** weichen Sie für einzelne Tage oder Zeiträume von den normalen Zeitregeln ab – für alle Objekte oder nur für einzelne.
+
+**Beispiele:** Feiertage, Betriebsferien, Vereinsfest, Wartung eines Platzes, eine Veranstaltung im Saal.
+
+### Ausnahme anlegen
+
+<Steps>
+  <Step title="Anlegen starten">
+    Wechseln Sie in den Reiter **Ausnahmen** und klicken Sie auf **Ausnahme hinzufügen**.
+  </Step>
+  <Step title="Zeitraum wählen">
+    Wählen Sie im Kalender unter **Zeitraum** den ersten und den letzten Tag. Für einen einzelnen Tag klicken Sie denselben Tag zweimal.
+  </Step>
+  <Step title="Objekte wählen">
+    Wählen Sie unter **Ressourcen** entweder **Alle** oder die betroffenen Objekte.
+  </Step>
+  <Step title="Ganz oder teilweise geschlossen?">
+    - **Geschlossen: Ja** – an diesen Tagen ist den ganzen Tag nichts buchbar.
+    - **Geschlossen: Nein** – geben Sie unter **Nicht verfügbar von / bis** die Uhrzeit an, in der nicht gebucht werden kann. Der Rest des Tages bleibt buchbar.
+  </Step>
+  <Step title="Erläuterung (optional)">
+    Unter **Erläuterung** können Sie Ihre Mitglieder über den Grund informieren, z. B. „Platzpflege“.
+  </Step>
+  <Step title="Speichern">
+    Klicken Sie auf **Ausnahme speichern**.
+  </Step>
+</Steps>
+
+Die Liste zeigt je Ausnahme den **Zeitraum**, die **Ressourcen**, den **Status** (Geschlossen/Offen) und den **Grund**. Über **Bearbeiten** und **Löschen** ändern oder entfernen Sie eine Ausnahme.
+
+<Note>
+  Ausnahmen gelten nur für neue Buchungen. Bereits bestehende Buchungen in diesem Zeitraum bleiben erhalten. Prüfen Sie diese unter [Reservierungen](/reservierungen-verwalten) und stornieren Sie sie bei Bedarf.
+</Note>
+
+## Weitere Regeln für buchbare Zeiten
+
+Neben Vorlagen und Ausnahmen beeinflussen diese Einstellungen, welche Zeiten Ihre Besucher sehen:
+
+| Regel | Wo einstellen? |
+|---|---|
+| **Vorlaufzeit:** Eine Startzeit muss mindestens **1 Stunde** in der Zukunft liegen. | fest eingestellt |
+| **Gleicher Tag buchbar:** Ob am selben Tag noch gebucht werden darf. | [Objekt](/objekt-anlegen-bearbeiten#buchungsverhalten) |
+| **Buchungsfenster:** Wie viele Monate im Voraus gebucht werden darf. | [Buchungsseite](/buchungsseiten-erstellen-bearbeiten#buchungsfenster-monate) |
+| **Mindestdauer / Takt:** In welchen Schritten Startzeiten angeboten werden. | [Kategorie](/kategorien#buchungsverhalten) / [Objekt](/objekt-anlegen-bearbeiten#buchungsverhalten) |
+| **Bereits gebuchte Zeiten** werden automatisch ausgeblendet. | automatisch |
+
+<Tip>
+  Prüfen Sie nach Änderungen Ihre Buchungsseite: Erscheinen die Zeiten so, wie Sie es erwarten?
+</Tip>
